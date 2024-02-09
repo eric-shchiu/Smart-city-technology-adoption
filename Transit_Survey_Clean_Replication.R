@@ -3,6 +3,7 @@ library(readxl)
 library(writexl)
 library(tidyr)
 library(ggplot2)
+library(sjPlot)
 
 setwd("~/Box Sync/Index blueprint2/Water and Transit Project Notes/Organizational Outreach/Firmographs/Firmographs2022/Survey")
 
@@ -218,4 +219,147 @@ result_df_filled$Q8_12 <- ifelse(is.na(result_df_filled$Q8_12), 0, result_df_fil
 length(result_df_filled$Q67[result_df_filled$Q8_12=="Using Systemwide"|result_df_filled$Q8_12=="Procuring"])
 #adopters by size
 table(result_df_filled$size[result_df_filled$Q8_12=="Using Systemwide"|result_df_filled$Q8_12=="Procuring"])
+
+
+#NTD ANALYSIS----
+#sampling frame
+samp_frame <- read_excel("transit_survey.xlsx")
+#read in documents
+ntd <- read_excel("~/Downloads/Qlik Sense - Summary Transit Organizations - February 6, 2024.xlsx")
+
+#double check what is NOT matching with NTDIDs
+intersect(samp_frame$NTDID, ntd$`ID NTD`)
+x <- setdiff(ntd$`ID NTD`, samp_frame$NTDID)
+nx <- subset(ntd, ntd$`ID NTD` %in% x)
+
+#Some firmographs agencies don't have NTD IDs (that do)
+#others don't have NTDIDs at all, and match with cities in our database, but names are different (e.g. Clovis)
+
+###name fixing-----
+
+#NTDID matches
+#anywhere match accounts for the 9RO2 prefix in samp_frame
+ntd$`ID NTD` <- ifelse(ntd$`ID NTD` =="-", "XX",ntd$`ID NTD` ) #get rid of dash so it doesn't match!
+ntd$matched <- ifelse(sapply(ntd$`ID NTD`, function(x) any(grepl(x, samp_frame$NTDID))), 1, 0)
+
+#let's pull over columns from samp_frame so we can do a final merge on name
+sf <- samp_frame %>% select(NTDID, AgencyName)
+sf$NTDID <- gsub("^9R02-", "", sf$NTDID)
+ntd <- merge(ntd, sf, by.x="ID NTD", by.y="NTDID", all.x=TRUE, all.y=FALSE)
+
+#drop , California - perfect name matches
+ntd$match_name <- ntd$`Name Parent`
+ntd$match_name <- gsub(", California", "", ntd$match_name)
+ntd$match_name <- gsub("City of ", "", ntd$match_name)
+ntd$matched <- ifelse(ntd$match_name %in% intersect(ntd$match_name, samp_frame$AgencyName), 1, ntd$matched)
+
+#port over the ntd matched names
+ntd$AgencyName <- ifelse(ntd$match_name  %in% intersect(ntd$match_name, samp_frame$AgencyName), ntd$match_name, ntd$AgencyName)
+
+#what else is left?
+ntd$match_name[ntd$matched==0]
+#correct names manually
+ntd$AgencyName[ntd$match_name == "Dinuba"] <- "CIty of Dinuba"
+ntd$AgencyName[ntd$match_name  == "Clovis"] <- "Clovis - Transit"
+ntd$AgencyName[ntd$match_name == "Colusa County"] <- "Colusa County Transit Agency"
+ntd$AgencyName[ntd$match_name  ==  "Stanislaus Regional Transit Authority"] <- "Stanislaus Regional Transit"
+ntd$AgencyName[ntd$match_name  == "Tulare County Association of Governments"] <- "Tulare County Association of Governments (TCAG)"
+length(ntd$AgencyName[!is.na(ntd$AgencyName)])
+
+#automated check to generate where the match_name is anywhere in samp_frame agency name JUST TO KNOW what "probable misses" could be
+
+unmatched <- ntd$match_name[is.na(ntd$AgencyName)]
+
+matched_unmatched <- c()
+
+# Iterate over each value in unmatched
+for (value in unmatched) {
+  # Check if the value appears anywhere in samp_frame$AgencyName
+  if (any(grepl(value, samp_frame$AgencyName, fixed = TRUE))) {
+    # If it does, append it to matched_unmatched
+    matched_unmatched <- c(matched_unmatched, value)
+  }
+}
+
+# Print the matched values
+print(matched_unmatched)
+
+#the remainder are cities with Public Works boards that may not actually deal with transit
+#since I selected boards that could be related to transit and discuss transit, this may include cities that DO NOT ACTUALLY manage transit
+
+
+##pair w/ mins------
+
+board_agencies <- read_excel("~/Downloads/Qlik Sense - Board Details - February 6, 2024.xlsx")
+
+
+boards <- read_excel("~/Downloads/Qlik Sense - Board Summary - February 6, 2024.xlsx")
+
+b <- merge(board_agencies, boards, by.x="Name Board", by.y="Name Board", all.x=TRUE, all.y=TRUE)
+b <- b %>% fill(`Name Parent`, .direction="down") #fill down to capture all boards
+b <- b %>% group_by(`Name Parent`) %>% summarize(minutes_sum = sum(`Count Minutes`))
+b <- subset(b, b$minutes_sum > 5) #only 2 agencies post less than 6 times across boards
+
+#now, this is boards that COULD discuss transit. I took a liberal approach here, thinking we can always cut if we want...
+
+# pair with agency characteristics
+ntd2 <- merge(ntd, b, by.x="Name Parent", by.y="Name Parent", all.x=TRUE, all.y=FALSE)
+ntd2 <- subset(ntd2, !(is.na(ntd2$AgencyName)) & !is.na(ntd2$minutes_sum)) #subset to agencies in our sampling frame and with non NA minutes 
+#select only relevant columns, this deletes duplicates too (which arises when one agency appears multiple times in the master list, even though the 
+#count minutes are the same (e.g. Fresno,Sacramento Regional Transit District,  Los Angeles County Metropolitan Transportation Authority)
+ntd3 <- unique(ntd2 %>% select(AgencyName, minutes_sum))
+
+sf <- merge(samp_frame, ntd3, by.x="AgencyName", by.y="AgencyName", all.x=TRUE, all.y=TRUE)
+sf$minutes <- ifelse(sf$minutes_sum > 0, 1, 0) #assign binary indicator for minute publication
+sf$minutes <- ifelse(is.na(sf$minutes), 0 , sf$minutes)
+
+##analysis----
+
+#descriptive stats
+
+#composition of minutes total
+type1 = subset(sf, sf$minutes==1) %>% group_by(OrgType) %>% summarize(pc = length(unique(AgencyName))/length(sf$AgencyName[sf$minutes==1]))
+#percent of each type
+type2 = sf %>% group_by(OrgType) %>% summarize(pc = length(unique(AgencyName[minutes ==1]))/length(AgencyName), n= length(AgencyName), mins=length(unique(AgencyName[minutes ==1])))
+#size
+size = subset(sf, sf$minutes==1)  %>% summarize(VOMS = mean(na.omit(VOMS)), pop = mean(na.omit(pop)), rev=mean(na.omit(revenue)))
+#regression
+sf$OrgType <- ifelse(sf$OrgType == "Independent Public Agency" , "Ind. Public Agency", sf$OrgType)
+sf$OrgType <- relevel(as.factor(sf$OrgType), ref="Local Government")
+m1 <-lm(minutes~OrgType+log(VOMS+1), data = sf)
+
+m2 <-lm(minutes~OrgType+log(pop+1), data = sf)
+
+m3 <-lm(minutes~OrgType+log(revenue+1), data = sf)
+
+m4<-lm(minutes~OrgType+VOMS, data = sf)
+
+m5 <-lm(minutes~OrgType+pop, data = sf)
+
+m6 <-lm(minutes~OrgType+revenue, data = sf)
+
+models <- list(
+  "Model 1"     = m1,
+  "Model 2"     = m2,
+  "Model 3" = m3,
+  "Model 4"     = m4,
+  "Model 5"     = m5,
+  "Model 6" = m6
+)
+
+
+model_summary <- modelsummary(models,stars = TRUE, coef_rename = TRUE,vcov="HC2",
+            fmt = fmt_sprintf("%.3f"),
+             output=  "~/Desktop/minutes.html")
+
+#plot
+show_sjplot_pals()
+
+plot_models(m1, m2, m3, show.p = TRUE, show.values=TRUE, p.threshold = c(0.05, 0.01, 0.001) , title="Minutes Publication (Log)",
+            vline.color = "red",
+            legend.title = "Model")+ scale_color_sjplot(palette = "eight")
+plot_models(m4, m5, m6, show.p = TRUE, show.values=TRUE, p.threshold = c(0.05, 0.01, 0.001) , title="Minutes Publication",
+            vline.color = "red",
+            legend.title = "Model")+ scale_color_sjplot(palette = "eight")
+                                                   
 
