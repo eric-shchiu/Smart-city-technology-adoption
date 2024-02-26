@@ -147,9 +147,6 @@ ggplot(aggregated_df_long, aes(x = Rationale, y = Count, fill = OrgType)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate labels by 45 degrees
 
-#MINUTES----
-mins <- read_excel("~/Downloads/1061 Minutes by Year.xlsx")
-setdiff(mins$`NTD ID`, samp_frame$NTDID)
 
 #Real time transit data-----
 
@@ -290,23 +287,15 @@ print(matched_unmatched)
 
 ##pair w/ mins------
 
-board_agencies <- read_excel("~/Downloads/Qlik Sense - Board Details - February 6, 2024.xlsx")
+mins <- read_excel("~/Desktop/Qlik Sense - Year Minutes Summary - February 26, 2024.xlsx")
+mins <- subset(mins, mins$`2023` > 5)
+mins <- mins %>% select(`Name Parent`, `2023`)
 
-
-boards <- read_excel("~/Downloads/Qlik Sense - Board Summary - February 6, 2024.xlsx")
-
-b <- merge(board_agencies, boards, by.x="Name Board", by.y="Name Board", all.x=TRUE, all.y=TRUE)
-b <- b %>% fill(`Name Parent`, .direction="down") #fill down to capture all boards
-b <- b %>% group_by(`Name Parent`) %>% summarize(minutes_sum = sum(`Count Minutes`))
-b <- subset(b, b$minutes_sum > 5) #only 2 agencies post less than 6 times across boards
-
-#now, this is boards that COULD discuss transit. I took a liberal approach here, thinking we can always cut if we want...
-
-# pair with agency characteristics
-ntd2 <- merge(ntd, b, by.x="Name Parent", by.y="Name Parent", all.x=TRUE, all.y=FALSE)
-ntd2 <- subset(ntd2, !(is.na(ntd2$AgencyName)) & !is.na(ntd2$minutes_sum)) #subset to agencies in our sampling frame and with non NA minutes 
+ntd2 <- merge(ntd, mins, by.x="Name Parent", by.y="Name Parent", all.x=TRUE, all.y=FALSE)
+ntd2 <- subset(ntd2, !(is.na(ntd2$AgencyName)) & !is.na(ntd2$`2023`)) #subset to agencies in our sampling frame and with non NA minutes 
 #select only relevant columns, this deletes duplicates too (which arises when one agency appears multiple times in the master list, even though the 
 #count minutes are the same (e.g. Fresno,Sacramento Regional Transit District,  Los Angeles County Metropolitan Transportation Authority)
+ntd2$minutes_sum <- ntd2$`2023` #for ease of name, the quotes are annoying
 ntd3 <- unique(ntd2 %>% select(AgencyName, minutes_sum))
 
 sf <- merge(samp_frame, ntd3, by.x="AgencyName", by.y="AgencyName", all.x=TRUE, all.y=TRUE)
