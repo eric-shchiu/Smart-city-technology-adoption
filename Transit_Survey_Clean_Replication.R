@@ -7,6 +7,18 @@ library(sjPlot)
 
 setwd("~/Box Sync/Index blueprint2/Water and Transit Project Notes/Organizational Outreach/Firmographs/Firmographs2022/Survey")
 
+#Update agency information with recent numbers (2022, since our data collection begins here, instead of 2018)
+transit_survey <- read_xlsx("~/Downloads/transit_survey.xlsx")
+info <- read_xlsx("~/Downloads/2018 Agency Info.xlsx")
+info$`NTD ID` <- gsub("0RO2-", "", info$`NTD ID`)
+info$`NTD ID` <- gsub("9R02-", "", info$`NTD ID`)
+transit_survey$NTDID <- gsub("9R02-", "", transit_survey$NTDID)
+setdiff(transit_survey$NTDID, info$`NTD ID`)
+info <- subset(info, info$`NTD ID` %in% transit_survey$NTDID)
+
+#update agency characteristics based on new NTDIDs (in whichever year we go with)
+write_xlsx(transit_survey, "transit_survey.xlsx")
+
 #Clean survey-----
 #read in qualtrics file (raw)
 surv <- read_excel("2.24TransportationSurvey_October 30, 2023_12.53.xlsx")
@@ -129,23 +141,25 @@ non_numeric_columns <- c("OrgType", "AgencyName")
 
 # Aggregate by OrgType and calculate the sum of numeric columns
 aggregated_df <- subset_df_binary %>%
-  group_by(OrgType) %>%
   summarise_at(vars(-one_of(non_numeric_columns)), sum)
 
 # Reshape the data for plotting
-aggregated_df_long <- tidyr::gather(aggregated_df, key = "Rationale", value = "Count", -OrgType)
+aggregated_df_long <- tidyr::gather(aggregated_df, key = "Rationale", value = "Count")
 aggregated_df_long <- subset(aggregated_df_long, aggregated_df_long$Rationale !="Other" & 
                                aggregated_df_long$Rationale !="Other - Text")
+adf <- subset(aggregated_df_long, aggregated_df_long$Count > 7)
 
-
-# Plot using ggplot2
-ggplot(aggregated_df_long, aes(x = Rationale, y = Count, fill = OrgType)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Count of Agencies by Reason and Organization Type",
-       x=NULL,
+# Plot using ggplot2 with a muted blue color palette
+ggplot(adf, aes(x = reorder(Rationale, Count), y = Count, fill = Count)) +
+  geom_bar(stat = "identity") +
+  scale_fill_gradient(low = "#b3cde3", high = "#3182bd") +  # Muted blue color palette
+  labs(title = "Count of Agencies by Adoption Rationale",
+       x = NULL,
        y = "Count") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate labels by 45 degrees
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+
 
 
 #Real time transit data-----
@@ -302,6 +316,7 @@ sf <- merge(samp_frame, ntd3, by.x="AgencyName", by.y="AgencyName", all.x=TRUE, 
 sf$minutes <- ifelse(sf$minutes_sum > 0, 1, 0) #assign binary indicator for minute publication
 sf$minutes <- ifelse(is.na(sf$minutes), 0 , sf$minutes)
 
+write.csv(sf, "~/Desktop/firmographs.csv")
 ##analysis----
 
 #descriptive stats
@@ -315,31 +330,32 @@ size = subset(sf, sf$minutes==1)  %>% summarize(VOMS = mean(na.omit(VOMS)), pop 
 #regression
 sf$OrgType <- ifelse(sf$OrgType == "Independent Public Agency" , "Ind. Public Agency", sf$OrgType)
 sf$OrgType <- relevel(as.factor(sf$OrgType), ref="Local Government")
-m1 <-lm(minutes~OrgType+log(VOMS+1), data = sf)
+sf$VOMS <- ifelse(sf$VOMS==0, NA,sf$VOMS)
+m1 <-lm(minutes~log(VOMS+1), data = sf)
 
-m2 <-lm(minutes~OrgType+log(pop+1), data = sf)
+m2 <-lm(minutes~log(pop), data = sf)
 
-m3 <-lm(minutes~OrgType+log(revenue+1), data = sf)
+m3 <-lm(minutes~log(revenue), data = sf)
 
-m4<-lm(minutes~OrgType+VOMS, data = sf)
+m4<-lm(minutes~log(mile), data = sf)
 
-m5 <-lm(minutes~OrgType+pop, data = sf)
-
-m6 <-lm(minutes~OrgType+revenue, data = sf)
 
 models <- list(
   "Model 1"     = m1,
   "Model 2"     = m2,
   "Model 3" = m3,
-  "Model 4"     = m4,
-  "Model 5"     = m5,
-  "Model 6" = m6
+  "Model 4"     = m4
 )
 
 
-model_summary <- modelsummary(models,stars = TRUE, coef_rename = TRUE,vcov="HC2",
+model_summary <- modelsummary(models,stars = TRUE, coef_rename = TRUE,vcov="HC2", estimate = c("estimate"),
             fmt = fmt_sprintf("%.3f"),
              output=  "~/Desktop/minutes.html")
+
+model_summary <- modelsummary(models,stars = TRUE, coef_rename = TRUE,vcov="HC2", 
+                              fmt = fmt_sprintf("%.3f"),
+                              output=  "~/Desktop/minutes.html")
+
 
 #plot
 show_sjplot_pals()
