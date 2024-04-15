@@ -9,15 +9,29 @@ setwd("~/Box Sync/Index blueprint2/Water and Transit Project Notes/Organizationa
 
 #Update agency information with recent numbers (2022, since our data collection begins here, instead of 2018)
 transit_survey <- read_xlsx("~/Downloads/transit_survey.xlsx")
-info <- read_xlsx("~/Downloads/2018 Agency Info.xlsx")
+info <- read_xlsx("2021 Agency Information.xlsx")
+revenue <- read_xlsx("2021 Funding Sources_static.xlsx", sheet=3)
+info <- subset(info, info$State=="CA")
 info$`NTD ID` <- gsub("0RO2-", "", info$`NTD ID`)
 info$`NTD ID` <- gsub("9R02-", "", info$`NTD ID`)
+info$`NTD ID` <- gsub("6R02-", "", info$`NTD ID`)
 transit_survey$NTDID <- gsub("9R02-", "", transit_survey$NTDID)
+transit_survey$NTDID <- gsub("6R02-", "", transit_survey$NTDID)
 setdiff(transit_survey$NTDID, info$`NTD ID`)
 info <- subset(info, info$`NTD ID` %in% transit_survey$NTDID)
+info$NTDID=info$`NTD ID`
+info$VOMS=info$`Total VOMS`
+info$pop= info$`Service Area Pop`
+info$mile = info$`Service Area Sq Miles`
+info <- info %>% select(NTDID, pop, mile, VOMS)
+revenue$NTDID = revenue$`NTD ID`
+revenue$revenue =revenue$Total
+revenue <- revenue %>% select(revenue, NTDID)
+transit_survey <- merge(transit_survey, revenue, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
+transit_survey <- merge(transit_survey, info, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
 
 #update agency characteristics based on new NTDIDs (in whichever year we go with)
-write_xlsx(transit_survey, "transit_survey.xlsx")
+write_xlsx(transit_survey, "transit_survey.csv")
 
 #Clean survey-----
 #read in qualtrics file (raw)
