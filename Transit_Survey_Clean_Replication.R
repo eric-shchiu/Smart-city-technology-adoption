@@ -249,7 +249,7 @@ table(result_df_filled$size[result_df_filled$Q8_12=="Using Systemwide"|result_df
 
 #NTD ANALYSIS----
 #sampling frame
-samp_frame <- read_excel("transit_survey.xlsx")
+samp_frame <- read_excel("transit_survey.csv")
 #read in documents
 ntd <- read_excel("~/Downloads/Qlik Sense - Summary Transit Organizations - February 6, 2024.xlsx")
 
@@ -290,7 +290,11 @@ ntd$AgencyName[ntd$match_name  == "Clovis"] <- "Clovis - Transit"
 ntd$AgencyName[ntd$match_name == "Colusa County"] <- "Colusa County Transit Agency"
 ntd$AgencyName[ntd$match_name  ==  "Stanislaus Regional Transit Authority"] <- "Stanislaus Regional Transit"
 ntd$AgencyName[ntd$match_name  == "Tulare County Association of Governments"] <- "Tulare County Association of Governments (TCAG)"
-length(ntd$AgencyName[!is.na(ntd$AgencyName)])
+
+#hwo many agencies are tracked by firmographs?
+length(ntd$AgencyName[!is.na(ntd$AgencyName)]) 
+#how many are NTD reporters?
+length(ntd$AgencyName[!is.na(ntd$AgencyName) & ntd$`ID NTD` !="XX"]) 
 
 #automated check to generate where the match_name is anywhere in samp_frame agency name JUST TO KNOW what "probable misses" could be
 
