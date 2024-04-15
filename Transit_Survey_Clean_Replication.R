@@ -27,6 +27,7 @@ info <- info %>% select(NTDID, pop, mile, VOMS)
 revenue$NTDID = revenue$`NTD ID`
 revenue$revenue =revenue$Total
 revenue <- revenue %>% select(revenue, NTDID)
+info$NTD_21 <- rep(1, length(info$NTDID))
 transit_survey <- merge(transit_survey, revenue, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
 transit_survey <- merge(transit_survey, info, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
 
