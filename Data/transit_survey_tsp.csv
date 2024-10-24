@@ -1,0 +1,227 @@
+﻿NTDID,AgencyName,OrgType,reptype,id,survey_response,tsp,City,County,Address,Zip,revenue,pop,mile,VOMS,NTD_21
+90003,San Francisco Bay Area Rapid Transit District,Independent Public Agency,Full Reporter,Principal City,0,,Oakland,Alameda,,,847755222,867725,80,512,1
+90004,Golden Empire Transit District,Independent Public Agency,Full Reporter,Principal City,0,,Bakersfield,Kern,1830 Golden State Avenue,93301,31432056,500977,111,91,1
+90006,Santa Cruz Metropolitan Transit District,Independent Public Agency,Full Reporter,Principal City,0,,Santa Cruz,Santa Cruz,110 Vernon Street,95060,49242398,274146,446,80,1
+90007,Modesto,Local Government,Full Reporter,Principal City,0,,Modesto,Stanislaus,PO Box 642,95354,23276818,271314,59,72,1
+90008,Santa Monica,Local Government,Full Reporter,Principal City,1,1,Santa Monica,Los Angeles,,,72979162,855918,59,128,1
+90009,San Mateo County Transit District,Independent Public Agency,Full Reporter,Suburban City,0,,San Carlos,San Mateo,PO Box 1306,94070-1306,159261539,764442,97,303,1
+90010,Torrance,Local Government,Full Reporter,Principal City,0,,Torrance,Los Angeles,,,21526479,606911,103,84,1
+90012,San Joaquin Regional Transit District,Independent Public Agency,Full Reporter,Principal City,0,,Stockton,San Joaquin,PO Box 201010,95201,40259716,772050,1426,81,1
+90013,Santa Clara Valley Transportation Authority,Independent Public Agency,Full Reporter,Principal City,1,1,San Jose,Santa Clara,3331 N First Street,95134,435508105,1934171,346,515,1
+90014,Alameda-Contra Costa Transit District,Independent Public Agency,Full Reporter,Principal City,1,,Oakland,Alameda,1600 Franklin Street,94612,459225557,1425275,364,500,1
+90015,City and County of San Francisco,Independent Public Agency,Full Reporter,Principal City,0,,San Francisco,San Francisco,1 South Van Ness 7th Flr,94103,913168703,875010,49,746,1
+90016,"Golden Gate Bridge, Highway and Transportation District",Independent Public Agency,Full Reporter,Principal City,0,,San Francisco,San Francisco,,,105227938,825821,118,107,1
+90017,Santa Rosa,Local Government,Full Reporter,Principal City,1,,Santa Rosa,Sonoma,45 Stony Point Road,95401,11917806,178127,51,25,1
+90019,Sacramento Regional Transit District,Independent Public Agency,Full Reporter,Principal City,0,,Sacramento,Sacramento,1400  29th Street,95812,199173780,1120100,220,300,1
+90020,Santa Barbara Metropolitan Transit District,Independent Public Agency,Full Reporter,Principal City,0,,Santa Barbara,Santa Barbara,550 Olive Street,93101,25186962,199668,52,74,1
+90022,Norwalk,Independent Public Agency,Full Reporter,Suburban City,0,,Norwalk,Los Angeles,12700 Norwalk Blvd,90650,13998649,637365,37,31,1
+90023,Long Beach Transit,Other,Full Reporter,Principal City,1,,Long Beach,Los Angeles,,,94079605,842127,100,128,1
+90024,La Mirada,Local Government,,,0,,La Mirada,,13700 La Mirada Blvd,90638,927607,49139,8,4,1
+90026,San Diego Metropolitan Transit System,Independent Public Agency,Full Reporter,Principal City,1,1,San Diego,San Diego,1255 Imperial Avenue Ste 1000,92101,300441890,2462707,720,691,1
+90027,Fresno,Local Government,Full Reporter,Principal City,1,1,Fresno,Fresno,2223 G Street,93706,58841255,542107,154,145,1
+90029,Omnitrans,Independent Public Agency,Full Reporter,Principal City,0,,San Bernardino,San Bernardino,,,78247525,1500107,466,143,1
+90030,North County Transit District,Independent Public Agency,Full Reporter,Small Rural City,1,1,Oceanside,San Diego,,,104700168,1043734,340,183,1
+90031,Riverside Transit Agency,Independent Public Agency,Full Reporter,Principal City,1,1,Riverside,Riverside,1825 Third Street,92507,79482012,1906470,2500,196,1
+90035,Gold Coast Transit,Independent Public Agency,Full Reporter,Principal City,1,,Oxnard,Ventura,1901 Auto Center Drive,93036,26779277,367260,84,70,1
+90036,Orange County Transportation Authority,Independent Public Agency,Full Reporter,Principal City,0,,Orange,Orange,550 S Main Street,92863,256820976,2972184,436,678,1
+90039,Culver City,Local Government,Full Reporter,Suburban City,1,1,Culver City,Los Angeles,4343 Duquesne Avenue,90232,29409549,529532,43,36,1
+90041,Montebello,Local Government,Full Reporter,Suburban City,0,,Montebello,Los Angeles,,,28282479,315074,151,82,1
+90042,Gardena,Local Government,Full Reporter,Principal City,0,,Gardena,Los Angeles,13999 S Western Avenue,90249,20789876,463968,40,30,1
+90043,Commerce,Local Government,Full Reporter,Suburban City,0,,Commerce,Los Angeles,5555 Jillson Street,90040,4971239,12997,11,11,1
+90044,Arcadia,Local Government,Reduced Reporter,Principal City,0,,Arcadia,Los Angeles,PO Box 60021,91066-6021,2132807,56364,11,14,1
+90050,Simi Valley,Local Government,Reduced Reporter,Suburban City,1,,Simi Valley,Ventura,2929 Tapo Canyon Road,93063,6725876,126878,42,17,1
+90052,Corona,Local Government,Reduced Reporter,Principal City,1,,Corona,Riverside,400 S Vicentia Avenue Ste 210,92882,1901147,171038,41,10,1
+90061,Yuba-Sutter Transit Authority,Independent Public Agency,Full Reporter,Small Rural City,1,,Marysville,Yuba,2100 B Street,95901,7542655,146749,813,31,1
+90062,Monterey-Salinas Transit,Independent Public Agency,Full Reporter,Small Rural City,1,1,Monterey,Monterey,,,41722960,439035,154,84,1
+90078,Central Contra Costa Transit Authority,Independent Public Agency,Full Reporter,Suburban City,0,,Concord,Contra Costa,2477 Arnold Industrial Way,94520,35851703,544004,143,97,1
+90079,SunLine Transit Agency,Independent Public Agency,Full Reporter,Suburban City,0,,Thousand Palms,Riverside,32-505 Harry Oliver Trail,92276,37951782,472830,1120,87,1
+90086,Riverside,Local Government,,,1,,Riverside,,3900 Main Street,92522,4100233,314998,82,15,1
+90087,Santa Maria,Local Government,Full Reporter,Principal City,1,1,Santa Maria,Santa Barbara,110 S Pine Street Ste 221,93458,4962342,120097,34,20,1
+90088,Napa Valley Transportation Authority,Independent Public Agency,Full Reporter,Principal City,0,,Napa,Napa,625 Burnell Street,94559-2951,9669343,138000,45,34,1
+90089,County of Sonoma,Local Government,Full Reporter,Principal City,0,,Santa Rosa,Sonoma,,,14629691,488863,391,44,1
+90090,Yolo County Transportation District,Independent Public Agency,Full Reporter,Small Rural City,0,,Woodland,Yolo,350 Industrial Way,95776,13339462,528880,109,41,1
+90091,Visalia,Local Government,Full Reporter,Principal City,1,,Visalia,Tulare,425 E Oak Avenue Ste 301,93291,15085557,161353,45,35,1
+90092,Fairfield,Local Government,Full Reporter,Suburban City,0,,Fairfield,Solano,2000 Cadenasso Drive,94533,11941036,505849,129,32,1
+90093,Redding Area Bus Authority,Independent Public Agency,Full Reporter,Principal City,0,,Redding,Shasta,777 Cypress Avenue,96001,5936657,126551,100,21,1
+90094,Metropolitan Transportation Commission (MTC),MPO/RTPA,,,1,1,Oakland,,,,3751147,7100000,6900,298,1
+90095,San Diego Association of Governments (SANDAG),MPO/RTPA,,,0,,San Diego,,401 B Street Ste 800,92101,7740823,3316192,4207,389,1
+90119,Laguna Beach,Local Government,Full Reporter,Suburban City,0,,Laguna Beach,Orange,,,1351764,23190,9,18,1
+90121,Antelope Valley Transit Authority,Independent Public Agency,Full Reporter,Suburban City,1,1,Lancaster,Los Angeles,42210 6th Street West,93534,32743568,349050,1200,90,1
+90134,Peninsula Corridor Joint Powers Board,Independent Public Agency,Full Reporter,Suburban City,0,,San Carlos,San Mateo,,,142925167,3632769,425,96,1
+90142,"University of California, Davis",Other,Full Reporter,Small Rural City,0,,Davis,Yolo,,,6544862,70827,13,21,1
+90144,Livermore / Amador Valley Transit Authority,Independent Public Agency,Full Reporter,Principal City,1,1,Livermore,Alameda,1362 Rutan Court Ste 100,94551,14029980,238310,40,40,1
+90146,Foothill Transit,Independent Public Agency,Full Reporter,Suburban City,1,1,West Covina,Los Angeles,,,101964981,1515836,327,303,1
+90147,Los Angeles,Local Government,Full Reporter,Principal City,1,1,Los Angeles,Los Angeles,,,99987237,4849476,465,348,1
+90148,Victor Valley Transit Authority,Independent Public Agency,Full Reporter,Suburban City,1,,Hesperia,San Bernardino,17150 Smoke Tree Street,92345,31270735,344288,327,277,1
+90149,Lompoc,Local Government,Reduced Reporter,Small Rural City,1,,Lompoc,Santa Barbara,1300 W Laurel Street  Bldg 4A,93436,2404143,54379,40,10,1
+90151,Southern California Regional Rail Authority,Independent Public Agency,Full Reporter,Principal City,0,,Los Angeles,Los Angeles,,,243444014,8341002,2291,184,1
+90154,Los Angeles County Metropolitan Transportation Authority,Independent Public Agency,Full Reporter,Principal City,1,,Los Angeles,Los Angeles,One Gateway Plaza  MS 99-23-3,90012,1809789641,10509518,4093,2541,1
+90155,Vacaville,Local Government,Reduced Reporter,Suburban City,0,,Vacaville,Solano,1001 Allison Drive,95687,2203046,102386,29,15,1
+90156,San Luis Obispo,Local Government,Full Reporter,Principal City,0,,San Luis Obispo,San Luis Obispo,919 Palm Street,93401,3116232,46997,22,15,1
+90157,Access Services,Independent Public Agency,,,0,,El Monte,,PO Box 5728,91734,166740979,11638106,1621,676,1
+90159,Western Contra Costa Transit Authority,Independent Public Agency,Full Reporter,Suburban City,0,,Pinole,Contra Costa,601 Walter Avenue,94564,11838276,64925,20,24,1
+90161,Union City,Local Government,Reduced Reporter,Suburban City,0,,Union City,Alameda,34009 Alvarado-Niles Road,94587,5414729,72779,18,17,1
+90162,The Eastern Contra Costa Transit Authority,Independent Public Agency,Full Reporter,Suburban City,1,,Antioch,Contra Costa,801 Wilbur Avenue,94509,23490500,331250,225,84,1
+90163,Camarillo,Local Government,Reduced Reporter,Principal City,0,,Camarillo,Ventura,601 Carmen Drive,93010,2462191,67845,20,19,1
+90164,Ventura County Transportation Commission,MPO/RTPA,Full Reporter,Suburban City,0,,Ventura,Ventura,751 E Daily Drive Ste 420,93010,8879046,209877,28,45,1
+90165,Thousand Oaks,Local Government,Reduced Reporter,Principal City,1,,Thousand Oaks,Ventura,2100 E Thousand Oaks Blvd,91362,6849479,424048,167,18,1
+90168,Roseville,Local Government,Reduced Reporter,Principal City,0,,Roseville,Placer,316 Vernon Street Ste 150,95678,5367025,147773,43,24,1
+90171,Santa Clarita,Local Government,Full Reporter,Suburban City,0,,Santa Clarita,Los Angeles,28250 Constellation Road,91355,22170041,252271,78,88,1
+90173,Transit Joint Powers Authority for Merced County,Independent Public Agency,Full Reporter,Principal City,0,,Merced,Merced,369 W 18th Street,95340,11883403,136957,310,57,1
+90175,Lodi,Local Government,Reduced Reporter,Small Rural City,1,,Lodi,San Joaquin,PO Box 3006,95240,3458291,67586,16,10,1
+90182,Altamont Corridor Express,Independent Public Agency,Full Reporter,Principal City,0,,Stockton,San Joaquin,,,26442179,4393972,28,22,1
+90196,County of Placer,Independent Public Agency,Full Reporter,Small Rural City,0,,Auburn,Placer,3091 Country Center Drive Ste 220,95603,14317976,392258,169,34,1
+90197,Tracy,Local Government,Reduced Reporter,Small Rural City,1,,Tracy,San Joaquin,50 E 6th Street,95376,4277286,85182,20,13,1
+90198,Porterville,Local Government,Reduced Reporter,Small Rural City,0,,Porterville,Tulare,291 N Main Street,93257,3609990,75691,49,14,1
+90199,Madera,Local Government,Reduced Reporter,Principal City,0,,Madera,Madera,205 W 4th Street,93637,2393639,66225,16,19,1
+90200,Kings County Area Public Transit Agency,Independent Public Agency,Full Reporter,Principal City,0,,Hanford,Kings,610 W 7th Street,93230,5631726,70408,13,51,1
+90201,Turlock,Local Government,Full Reporter,Small Rural City,0,,Turlock,Stanislaus,1418 N Golden State Blvd Ste 1,95380,3465652,87867,22,11,1
+90205,Elk Grove,Local Government,Full Reporter,Small Rural City,0,,Elk Grove,Sacramento,8401 Laguna Palms Way,95758,8970422,178124,42,41,1
+90206,San Luis Obispo Regional Transit Authority,Independent Public Agency,Full Reporter,Principal City,0,,San Luis Obispo,San Luis Obispo,179 Cross Street Ste A,93401,15869063,206008,130,39,1
+90208,Butte County Association of Governments,MPO/RTPA,Full Reporter,Principal City,1,,Chico,Butte,326 Huss Drive Ste 150,95928,9314407,165544,186,37,1
+90211,Anaheim Transportation Network,Other,Full Reporter,Principal City,1,,Anaheim,Orange,,,4991957,358000,50,28,1
+90213,Petaluma,Local Government,Full Reporter,Principal City,0,,Petaluma,Sonoma,555 N McDowell Blvd,94954,2905494,60520,14,12,1
+90214,Redondo Beach,Local Government,Full Reporter,Suburban City,0,,Redondo Beach,Los Angeles,415 Diamond Street,90277,4285109,67233,13,21,1
+90216,County of Sacramento Municipal Services Agency Department of Transportation,Local Government,Rural Reporter,Principal City,0,,Sacramento,Sacramento,,,,,,13,1
+90217,Manteca,Local Government,Reduced Reporter,Small Rural City,0,,Manteca,San Joaquin,220 Moffat Blvd,95336,2012391,81345,21,6,1
+90218,Riverside County Transportation Commission,MPO/RTPA,Full Reporter,Principal City,1,,Riverside,Riverside,4080 Lemon Street 3rd Flr,92501,808464,1967995,2100,30,1
+90220,Folsom,Local Government,Reduced Reporter,Principal City,0,,Folsom,Sacramento,,,,,,,
+90225,San Francisco Bay Area Water Emergency Transportation Authority,Independent Public Agency,Full Reporter,Principal City,0,,San Francisco,San Francisco,,,31391149,345375,127,4,1
+90226,Imperial County Transportation Commission,MPO/RTPA,Full Reporter,Principal City,0,,El Centro,Imperial,1503 N Imperial Avenue Ste 104,92243,4601588,181698,425,16,1
+90227,Moorpark,Local Government,Reduced Reporter,Suburban City,0,,Moorpark,Ventura,799 Moorpark Avenue,93021,1034416,37020,12,4,1
+90229,El Dorado County Transit Authority,Independent Public Agency,Full Reporter,Small Rural City,1,,Diamond Springs,El Dorado,6565 Commerce Drive,95619,6929863,148614,1719,16,1
+90232,Solano County Transit,Independent Public Agency,Full Reporter,Principal City,0,,Vallejo,Solano,311 Sacramento Street,94590,12918856,149473,65,24,1
+90234,Marin County Transit District,Independent Public Agency,Full Reporter,Principal City,0,,San Rafael,Marin,711 Grand Avenue Ste 110,94901,29895666,258826,520,74,1
+90236,Stanislaus Regional Transit,Independent Public Agency,Reduced Reporter,Principal City,1,1,Modesto,Stanislaus,912 11th Street,95354,5832849,550660,1515,28,1
+90238,Delano,Local Government,Reduced Reporter,Small Rural City,0,,Delano,Kern,PO Box 3010,93216,1870288,53041,50,8,1
+90244,Tulare,Local Government,Full Reporter,Small Rural City,0,,Tulare,Tulare,411 E Kern Avenue,93274,3535851,67834,21,10,1
+90247,Alhambra,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,111 S First Street,91801,2246516,83089,8,15,1
+90249,Avalon,Local Government,Reduced Reporter,Suburban City,1,1,Avalon,Los Angeles,PO Box 707,90704,727125,3801,1,4,1
+90251,Baldwin Park,Local Government,Reduced Reporter,Suburban City,0,,Baldwin Park,Los Angeles,,,1605965,76056,7,8,1
+90252,Bell,Local Government,Reduced Reporter,Suburban City,0,,Bell,Los Angeles,,,325601,35731,3,10,1
+90253,Bell Gardens,Local Government,Reduced Reporter,Suburban City,0,,Bell Gardens,Los Angeles,,,870763,42889,2,5,1
+90254,Bellflower,Local Government,Reduced Reporter,Suburban City,0,,Bellflower,Los Angeles,,,883808,78110,6,4,1
+90256,Burbank,Local Government,Reduced Reporter,Principal City,0,,Burbank,Los Angeles,275 E Olive Avenue,91510,3050922,107337,17,17,1
+90257,Calabasas,Local Government,Reduced Reporter,Suburban City,0,,Calabasas,Los Angeles,,,353293,24075,13,15,1
+90258,Carson,Local Government,Reduced Reporter,Principal City,0,,Carson,Los Angeles,,,312527,91714,19,15,1
+90259,Cerritos,Local Government,Reduced Reporter,Suburban City,0,,Cerritos,Los Angeles,,,1103944,49578,9,16,1
+90260,Compton,Local Government,Reduced Reporter,Suburban City,0,,Compton,Los Angeles,205 S Willowbrook Avenue,90220,1854756,96803,10,7,1
+90262,Cudahy,Local Government,Reduced Reporter,Suburban City,0,,Cudahy,Los Angeles,,,275713,24103,1,6,1
+90263,Downey,Local Government,Reduced Reporter,Suburban City,0,,Downey,Los Angeles,7850 Quill Drive,90242,1776189,111772,13,13,1
+90264,Duarte,Local Government,Reduced Reporter,Suburban City,0,,Duarte,Los Angeles,,,,,,,
+90265,El Monte,Local Government,Reduced Reporter,Suburban City,1,1,El Monte,Los Angeles,3990 Arden Drive,91731,3203643,201889,10,12,1
+90266,Glendora,Local Government,Reduced Reporter,Suburban City,0,,Glendora,Los Angeles,116 E Foothill Blvd,91741,802631,52558,19,14,1
+90268,Inglewood,Local Government,Reduced Reporter,Suburban City,0,,Inglewood,Los Angeles,One Manchester Blvd,90301,961894,222357,21,8,1
+90269,Los Angeles County Dept. of Public Works - Athens Shuttle Service,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,273995,23159,25,1,1
+90270,Los Angeles County Department of Public Works - Avocado Heights,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,303718,15500,9,1,1
+90271,Los Angeles County Department of Public Works - East L.A.,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,2299625,126496,8,16,1
+90272,Los Angeles County Department of Public Works - East Valinda,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,342326,22822,15,1,1
+90273,Los Angeles County Dept. of Public Works - Florence-Firestone,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,646174,63387,7,2,1
+90274,Los Angeles County Dept. of Public Works - King Medical Center Shuttle Service,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,412297,12358,49,2,1
+90275,Los Angeles County Dept. of Public Works - Lennox Shuttle,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,313648,27897,16,1,1
+90276,Los Angeles County Department of Public Works - South Whittier,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,1356635,86883,5,5,1
+90278,Los Angeles County Dept. of Public Works - Willowbrook Shuttle,Local Government,Reduced Reporter,Suburban City,0,,Alhambra,Los Angeles,,,414407,24798,36,2,1
+90280,Lawndale,Local Government,Reduced Reporter,Suburban City,0,,Lawndale,Los Angeles,,,,,,,
+90281,Lynwood,Local Government,Reduced Reporter,Suburban City,0,,Lynwood,Los Angeles,,,1208140,69880,5,4,1
+90284,Maywood,Local Government,Reduced Reporter,Suburban City,0,,Maywood,Los Angeles,,,424266,27748,2,6,1
+90285,Monrovia Public Works,Local Government,,,0,,Monrovia,,600 South Mountain Avenue,91016,361892,36816,16,4,1
+90286,Monterey Park,Local Government,Reduced Reporter,Suburban City,0,,Monterey Park,Los Angeles,320 W Newmark Avenue,91754,586086,61828,8,4,1
+90287,Palos Verdes Peninsula Transit Authority,Independent Public Agency,Reduced Reporter,Suburban City,0,,Palos Verdes Peninsula,Los Angeles,PO Box 2656,90274,1505082,64272,22,26,1
+90288,Pico Rivera,Local Government,,,0,,Pico Rivera,,6615 Passons Blvd,90660,469812,62942,11,1,1
+90289,Rosemead,Local Government,Reduced Reporter,Suburban City,0,,Rosemead,Los Angeles,8838 East Valley Blvd,91770,1073095,54908,5,7,1
+90290,Santa Fe Springs,Local Government,,,0,,Santa Fe Springs,,11710 Telegraph Road,90670,363585,18261,25,2,1
+90291,South Gate,Local Government,Reduced Reporter,Suburban City,0,,South Gate,Los Angeles,4900 Southern Avenue,90280,1607426,99578,8,14,1
+90293,West Covina,Local Government,Reduced Reporter,Suburban City,0,,West Covina,Los Angeles,125 E College Street,91723,1431745,107634,16,8,1
+90294,West Hollywood,Local Government,Reduced Reporter,Suburban City,0,,West Hollywood,Los Angeles,8300 Santa Monica Blvd,90069,1769652,36854,2,7,1
+90295,Whittier - Transit,Local Government,,,0,,Whittier,,13230 Penn Street,90602,1365380,87708,15,10,1
+90296,Claremont,Local Government,,,0,,Claremont,,1616 Monte Vista Avenue,91711,279900,36700,13,20,1
+90298,County of Ventura,Local Government,Reduced Reporter,Suburban City,0,,Ventura,Ventura,,,318241,13898,4,3,1
+90299,Sonoma-Marin Area Rail Transit District,Independent Public Agency,Full Reporter,Principal City,1,,Petaluma,Sonoma,,,28678898,751184,2596,8,1
+90303,Santa Barbara County Association of Governments (SBCAG),MPO/RTPA,,,1,,Santa Barbara,,,,1865636,277350,2554,9,1
+90308,Sacramento Area COG (SACOG),MPO/RTPA,,,0,,Sacramento,,,,166248,,,,1
+91000,Amador Regional Transit System,Independent Public Agency,Rural Reporter,Small Rural City,1,,Jackson,Amador,11400 American Legion Drive,95642-9525,,,,17,1
+91002,Corcoran - Transit Division,Local Government,,,0,,Corcoran,,832 Whitley Avenue,93212,,,,6,1
+91005,Madera County,Local Government,Rural Reporter,Principal City,0,,Madera,Madera,200 West 4th Street,93637,,,,8,1
+91006,Ridgecrest,Local Government,Rural Reporter,Small Rural City,0,,Ridgecrest,Kern,100 W California Avenue,93555,,,,4,1
+91007,Fresno County Rural Transit Agency,Independent Public Agency,Rural Reporter,Principal City,1,,Fresno,Fresno,2035 Tulare Street Ste 201,93721,,,,65,1
+91008,Modoc Transportation Agency,Local Government,Rural Reporter,Small Rural City,0,,Alturas,Modoc,,,,,,3,1
+91009,San Benito County LTA,Independent Public Agency,Rural Reporter,Small Rural City,1,,Hollister,San Benito,330 Tres Pinos Road Ste C7,95023,,,,10,1
+91012,Mountain Area Regional Transit Authority,Independent Public Agency,Rural Reporter,Suburban City,0,,Big Bear Lake,San Bernardino,PO Box 1501,92315,,,,16,1
+91014,Rio Vista,Local Government,Rural Reporter,Suburban City,0,,Rio Vista,Solano,1 Harbor Center Ste 130,94585,,,,3,1
+91018,Arcata,Local Government,Rural Reporter,Principal City,0,,Arcata,Humboldt,,,,,,2,1
+91020,Needles,Local Government,Rural Reporter,Suburban City,0,,Needles,San Bernardino,817 Third Street,92363,,,,1,1
+91027,Arvin,Local Government,Rural Reporter,Small Rural City,1,1,Arvin,Kern,165 Plum Tree,93203,,,,3,1
+91028,Solvang,Local Government,Rural Reporter,Small Rural City,0,,Solvang,Santa Barbara,411 Second Street,93463,,,,5,1
+91032,Auburn,Local Government,Rural Reporter,Small Rural City,1,,Auburn,Placer,1225 Lincoln Way Rm 3,95603,,,,5,1
+91035,Trinity County,Local Government,Rural Reporter,Small Rural City,0,,Weaverville,Trinity,PO Box 2490,96093,,,,4,1
+91036,Humboldt Transit Authority,Independent Public Agency,Rural Reporter,Principal City,0,,Eureka,Humboldt,133 V Street,95501,,,,14,1
+91040,CIty of Dinuba,Local Government,Rural Reporter,Small Rural City,0,,Dinuba,Tulare,1088 E Kamm Avenue,93618,,,,5,1
+91043,Guadalupe,Local Government,Rural Reporter,Small Rural City,0,,GUADALUPE,,,,,,,2,1
+91047,Mendocino Transit Authority,Independent Public Agency,Rural Reporter,Principal City,0,,Ukiah,Mendocino,241 Plant Road,95482,,,,26,1
+91048,County of Siskiyou,Local Government,Rural Reporter,Small Rural City,0,,Yreka,Siskiyou,,,,,,7,1
+91053,Lake Transit Authority,Independent Public Agency,Rural Reporter,Principal City,0,,Visalia,Tulare,525 South Main Street Ste G,95482,,,,23,1
+91055,Tulare County Area Transit,Independent Public Agency,Rural Reporter,Principal City,1,,Visalia,Tulare,5961 S Mooney Blvd,93277,,,,24,1
+91057,Tuolumne County Transit,Independent Public Agency,Rural Reporter,Principal City,0,,Sonora,Tuolumne,2 S Green Street,95370,,,,21,1
+91058,Ojai,Local Government,Rural Reporter,Suburban City,0,,Ojai,Ventura,408 S Signal Street,93023,,,,2,1
+91059,Kern Regional Transit,Independent Public Agency,Rural Reporter,Principal City,0,,Bakersfield,Kern,2700 M Street Ste 400,93301,,,,39,1
+91062,Eastern Sierra Transit Authority,Independent Public Agency,Rural Reporter,Small Rural City,0,,Bishop,Inyo,PO Box 1357,93515,,,,37,1
+91063,Calaveras County Department of Public Works,Local Government,Rural Reporter,Small Rural City,0,,San Andreas,Calaveras,,,,,,,
+91066,Taft,Local Government,,,0,,Taft,,209 E Kern Street,93268,,,,3,1
+91070,Yosemite Area Regional Transportation System,Independent Public Agency,Rural Reporter,Principal City,0,,Merced,Merced,,,,,,10,1
+91071,Chowchilla,Local Government,,,0,,Chowchilla,,130 S Second Street,93610,,,,2,1
+91078,Escalon,Local Government,Rural Reporter,Small Rural City,1,,Escalon,San Joaquin,2060 McHenry Avenue,95320,,,,2,1
+91082,Mariposa County Department of Public Works,Local Government,,,0,,Mariposa,,4639 Ben Hur Road,95338,,,,8,1
+91088,Glenn Transit Service,Independent Public Agency,Rural Reporter,Small Rural City,0,,Willows,Glenn,225 N Tehama Street,95988,,,,4,1
+91089,Tehama County,Local Government,Rural Reporter,Small Rural City,0,,Gerber,Tehama,,,,,,14,1
+91090,Morongo Basin Transit Authority,Independent Public Agency,Rural Reporter,Suburban City,1,,Joshua Tree,San Bernardino,62405 Verbena Road,92252,,,,13,1
+91092,Tahoe Transportation District,Independent Public Agency,,,0,,,,,,5999815,,,,
+91093,Eureka,Local Government,Rural Reporter,Principal City,0,,Eureka,Humboldt,,,,,,9,1
+91095,Nevada County Transit Services,Independent Public Agency,Rural Reporter,Small Rural City,1,,Nevada City,Nevada,950 Maidu Avenue,95959,,,,11,1
+91097,Redwood Coast Transit Authority,Independent Public Agency,Rural Reporter,Principal City,1,,Visalia,Tulare,1275 4th Street Ste 733,95404,,,,6,1
+91098,Lassen Transit Service Agency,Independent Public Agency,Rural Reporter,Principal City,1,,Susanville,Lassen,707 Nevada Street Ste 4,96130,,,,6,1
+91101,Town of Truckee,Local Government,Rural Reporter,Principal City,1,,Truckee,Nevada,10183 Truckee Airport Road,96161,,,,6,1
+91112,Colusa County Transit Agency,Independent Public Agency,,,0,,Colusa,,715 D Street,95932,,,,6,1
+91116,Alpine County Local Transportation Commission,MPO/RTPA,,,0,,Markleeville,,50 Diamond Valley Road,96120,,,,1,1
+91119,Plumas County Transportation Commission,MPO/RTPA,Rural Reporter,Small Rural City,0,,Quincy,Plumas,1834 E Main Street,95971,,,,4,1
+99256,Susanville Indian Rancheria,Other,Reduced Reporter,Principal City,0,,Susanville,Lassen,,,,,,,
+99262,Yurok Tribe,Other,Reduced Reporter,Small Rural City,0,,Klamath,Del Norte,,,302598,,,5,1
+99292,Blue Lake Rancheria,Other,Reduced Reporter,Small Rural City,0,,Blue Lake,Humboldt,,,86668,,,3,1
+99316,Chemehuevi Indian Tribe,Other,Reduced Reporter,Suburban City,0,,Havasu Lake,San Bernardino,,,467293,,,1,1
+99422,San Joaquin COG (SJCOG),MPO/RTPA,,,0,,Stockton,,,,4240238,773581,1426,280,1
+99423,Glendale,Local Government,Full Reporter,Principal City,0,,Glendale,Los Angeles,1759 Gardena Avenue,91204,10140579,223467,39,37,1
+99424,Pasadena,Local Government,Full Reporter,Principal City,0,,Pasadena,Los Angeles,221 E Walnut Street Ste 199,91101,8164393,141371,23,36,1
+99425,Pomona Valley Transportation Authority,Independent Public Agency,,,0,,La Verne,,2120 Foothill Blvd Ste 116,91750,2834787,252880,61,26,1
+99438,County of Shasta Department of Public Works,Local Government,Rural Reporter,Principal City,0,,Redding,Shasta,,,,,,,1
+99442,Calaveras Transit Agency,Independent Public Agency,,,0,,San Andreas,,PO Box 280,95249,,,,6,1
+99454,Palo Verde Valley Transit Agency,Independent Public Agency,,,0,,Blythe,,415 N Main Street,92225,,,,6,1
+,San Luis Obispo COG (SLOCOG),MPO/RTPA,,,1,,San Luis Obispo,,1114 Marsh Street,93401,,,,,
+,San Pablo,Local Government,,,1,,San Pablo,,1000 Gateway Avenue,94806,,,,,
+,Kern COG,MPO/RTPA,,,0,,Bakersfield,,,,,,,,
+,Plumas Transit,Independent Public Agency,,,0,,Quincy,,711 E Main Street,95971,,,,,
+,Banning,Local Government,,,0,,Banning,,PO Box 998,92220,,,,,
+,Modoc County Transportation Commission,MPO/RTPA,,,0,,Alturas,,108 S Main Street,96101,,,,,
+,Clovis - Transit,Local Government,,,0,,Clovis,,155 N Sunnyside Avenue,93611,,,,,
+,Norco,Local Government,,,0,,Norco,,2870 Clark Avenue,92860,,,,,
+,Kings County Association of Governments (KCAG),MPO/RTPA,,,0,,Lemoore,,,,,,,,
+,Siskiyou County Transit,Independent Public Agency,,,0,,Yreka,,190 Greenhorn Road,96097,,,,,
+,Madera County Transportation Commission (Madera CTC),MPO/RTPA,,,0,,Madera,,,,,,,,
+,Sonoma County Transit,Independent Public Agency,,,0,,Santa Rosa,,355 W Robles Avenue,95407,,,,,
+,South El Monte,Local Government,,,0,,South El Monte,,1556 Central Avenue,91733,,,,,
+,Stanislaus COG (StanCOG),MPO/RTPA,,,0,,Modesto,,1111 I Street Ste 308,95354,,,,,
+,El Dorado County Transportation Commission,MPO/RTPA,,,1,,Placerville,,2828 Easy Street Ste 1,95667,,,,,
+,Montebello Bus Lines,Independent Public Agency,,,0,,Montebello,,400 S Taylor Avenue,90640,,,,,
+,"Monterey County, Transportation Agency (TAMC)",Local Government,,,0,,Salinas,,55-B Plaza Circle,93901,,,,,
+,Tehama County Transportation Commission,MPO/RTPA,,,1,,Gerber,,9380 San Benito Avenue,96038,,,,,
+,Solano Transportation Authority,Local Government,,,0,,Suisun,,One Harbor Center Ste 130,94583,,,,,
+,Tulare County Regional Transit Agency,Local Government,,,1,1,Visalia,,210 N Church Street Ste B,93291,,,,,
+,Tahoe MPO (TMPO),MPO/RTPA,,,0,,Stateline,,,,,,,,
+,Tulare County Association of Governments (TCAG),MPO/RTPA,,,0,,Visalia,,,,,,,,
+,Sacramento County Department of Transportation,Independent Public Agency,,,0,,Sacramento,,4111 Branch Center Road,95827,,,,,
+,Shasta Regional Transportation Agency (SRTA),MPO/RTPA,,,0,,Redding,,1255 East Street Ste 202,96001,,,,,
+,Association of Monterey Bay Area Governments (AMBAG),MPO/RTPA,,,0,,Marina,,,,,,,,
+,Merced County Association of Governments (MCAG),MPO/RTPA,,,0,,Merced,,,,,,,,
+,Morro Bay,Local Government,,,0,,Morro Bay,,595 Harbor Street,93442,,,,,
+,Beaumont,Local Government,,,0,,Beaumont,,550 East 6th Street,92223,,,,,
+,Southern California Association of Governments (SCAG),MPO/RTPA,,,0,,Los Angeles,,,,,,,,
+,Redlands,Local Government,,,0,,Redlands,,PO Box 3005,92373,,,,,
+,Fresno Council of Governments (Fresno COG),MPO/RTPA,,,1,1,Fresno,,2035 Tulare Street Ste 201,93721,,,,,
