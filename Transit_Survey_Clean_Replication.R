@@ -6,7 +6,7 @@ library(ggplot2)
 library(sjPlot)
 library(modelsummary)
 
-
+setwd("~/Desktop/tsp/")
 #Clean survey-----
 #read in qualtrics file (raw)
 surv <- read_excel("2.24TransportationSurvey_October 30, 2023_12.53.xlsx")
@@ -123,9 +123,9 @@ write.csv(transit_survey, "transit_survey_tsp.csv")
 
 ####Adoption Plots-----
 tspadopt <- result_df_filled %>% group_by(Q8_1, OrgType) %>% summarize(Count=n())
+tspadopt <- na.omit(tspadopt)
 ggplot(na.omit(subset(tspadopt, tspadopt$Q8_1 !="Not at all")), aes(x=Q8_1, y=Count, fill=OrgType))+geom_bar(stat="identity", position="dodge")+
-  xlab("Transit Signal Priority Adoption Stage") +ylab("Count of Agencies")+
-  theme_minimal()
+  xlab("Transit Signal Priority Adoption Stage") +ylab("Count of Agencies")
 
 #Q18 is for piloting, future adoption
 
@@ -235,7 +235,7 @@ subset_df_binary <- subset_df %>%
   )
 
 #add in size indicator 
-sf <- samp_frame %>% select(AgencyName, VOMS)
+sf <- transit_survey %>% select(AgencyName, VOMS)
 sf$size <- ifelse(sf$VOMS > 99, 1,sf$VOMS ) #this keeps NAs so we exclude
 sf$size <- ifelse(sf$VOMS < 99, 0,sf$size)
 subset_df_binary <- merge(subset_df_binary, sf, by.x="AgencyName", by.y="AgencyName", all.x=TRUE, all.y=FALSE)
@@ -345,7 +345,7 @@ ntd2 <- subset(ntd2, !(is.na(ntd2$AgencyName)) & !is.na(ntd2$`2023`)) #subset to
 ntd2$minutes_sum <- ntd2$`2023` #for ease of name, the quotes are annoying
 ntd3 <- unique(ntd2 %>% select(AgencyName, minutes_sum))
 
-sf <- merge(samp_frame, ntd3, by.x="AgencyName", by.y="AgencyName", all.x=TRUE, all.y=TRUE)
+sf <- merge(transit_survey, ntd3, by.x="AgencyName", by.y="AgencyName", all.x=TRUE, all.y=TRUE)
 sf$minutes <- ifelse(sf$minutes_sum > 0, 1, 0) #assign binary indicator for minute publication
 sf$minutes <- ifelse(is.na(sf$minutes), 0 , sf$minutes)
 
