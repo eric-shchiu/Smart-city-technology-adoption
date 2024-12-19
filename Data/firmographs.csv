@@ -1,0 +1,232 @@
+"","AgencyName","NTDID","OrgType","reptype","id","survey_response","pop","mile","VOMS","revenue","City","County","Address","Zip","minutes_sum","minutes"
+"1","","","","","",0,NA,NA,NA,NA,"","","","",NA,0
+"2","","","","","",0,NA,NA,NA,NA,"","","","",NA,0
+"3","","","","","",0,NA,NA,NA,NA,"","","","",NA,0
+"4","","","","","",0,NA,NA,NA,NA,"","","","",NA,0
+"5","","","","","",0,NA,NA,NA,NA,"","","","",NA,0
+"6","Access Services","90157","Independent Public Agency","","",0,NA,NA,NA,NA,"El Monte","","PO Box 5728","91734",26,1
+"7","Alameda-Contra Costa Transit District","90014","Independent Public Agency","Full Reporter","Principal City",1,1425275,364,794,520172455,"Oakland","Alameda","1600 Franklin Street","94612",25,1
+"8","Alhambra","90247","Local Government","Reduced Reporter","Suburban City",0,83089,8,15,1893158,"Alhambra","Los Angeles","111 S First Street","91801",39,1
+"9","Alpine County Local Transportation Commission","91116","MPO/RTPA","","",0,NA,NA,NA,NA,"Markleeville","","50 Diamond Valley Road","96120",NA,0
+"10","Altamont Corridor Express","90182","Independent Public Agency","Full Reporter","Principal City",0,4094704,28,34,39739603,"Stockton","San Joaquin","","",14,1
+"11","Amador Regional Transit System","9R02-91000","Independent Public Agency","Rural Reporter","Small Rural City",1,NA,NA,11,NA,"Jackson","Amador","11400 American Legion Drive","95642-9525",11,1
+"12","Anaheim Transportation Network","90211","Other","Full Reporter","Principal City",1,358000,50,77,16990444,"Anaheim","Orange","","",NA,0
+"13","Antelope Valley Transit Authority","90121","Independent Public Agency","Full Reporter","Suburban City",1,349050,1200,74,33705489,"Lancaster","Los Angeles","42210 6th Street West","93534",NA,0
+"14","Arcadia","90044","Local Government","Reduced Reporter","Principal City",0,56364,11,14,1792987,"Arcadia","Los Angeles","PO Box 60021","91066-6021",21,1
+"15","Arcata","9R02-91018","Local Government","Rural Reporter","Principal City",0,NA,NA,3,NA,"Arcata","Humboldt","","",25,1
+"16","Arvin","9R02-91027","Local Government","Rural Reporter","Small Rural City",1,NA,NA,6,NA,"Arvin","Kern","165 Plum Tree","93203",18,1
+"17","Association of Monterey Bay Area Governments (AMBAG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Marina","","","",NA,0
+"18","Auburn","9R02-91032","Local Government","Rural Reporter","Small Rural City",1,NA,NA,5,NA,"Auburn","Placer","1225 Lincoln Way Rm 3","95603",23,1
+"19","Avalon","90249","Local Government","Reduced Reporter","Suburban City",1,3801,1,4,819641,"Avalon","Los Angeles","PO Box 707","90704",20,1
+"20","Baldwin Park","90251","Local Government","Reduced Reporter","Suburban City",0,76056,7,6,1459975,"Baldwin Park","Los Angeles","","",19,1
+"21","Banning","","Local Government","","",0,NA,NA,NA,NA,"Banning","","PO Box 998","92220",NA,0
+"22","Beaumont","","Local Government","","",0,NA,NA,NA,NA,"Beaumont","","550 East 6th Street","92223",NA,0
+"23","Bell","90252","Local Government","Reduced Reporter","Suburban City",0,35731,3,7,345823,"Bell","Los Angeles","","",9,1
+"24","Bell Gardens","90253","Local Government","Reduced Reporter","Suburban City",0,42889,2,6,1111408,"Bell Gardens","Los Angeles","","",NA,0
+"25","Bellflower","90254","Local Government","Reduced Reporter","Suburban City",0,78106,6,4,1553994,"Bellflower","Los Angeles","","",26,1
+"26","Blue Lake Rancheria","99292","Other","Reduced Reporter","Small Rural City",0,NA,NA,1,123569,"Blue Lake","Humboldt","","",NA,0
+"27","Burbank","90256","Local Government","Reduced Reporter","Principal City",0,104834,17,14,1934429,"Burbank","Los Angeles","275 E Olive Avenue","91510",32,1
+"28","Butte County Association of Governments","90208","MPO/RTPA","Full Reporter","Principal City",1,187257,202,48,14258314,"Chico","Butte","326 Huss Drive Ste 150","95928",575,1
+"29","Calabasas","90257","Local Government","Reduced Reporter","Suburban City",0,24075,13,13,721419,"Calabasas","Los Angeles","","",21,1
+"30","Calaveras County Department of Public Works","9R02-91063","Local Government","Rural Reporter","Small Rural City",0,NA,NA,11,NA,"San Andreas","Calaveras","","",NA,0
+"31","Calaveras Transit Agency","99442","Independent Public Agency","","",0,NA,NA,NA,NA,"San Andreas","","PO Box 280","95249",6,1
+"32","Camarillo","90163","Local Government","Reduced Reporter","Principal City",0,67845,20,21,2262048,"Camarillo","Ventura","601 Carmen Drive","93010",22,1
+"33","Carson","90258","Local Government","Reduced Reporter","Principal City",0,91714,19,15,2869915,"Carson","Los Angeles","","",26,1
+"34","Central Contra Costa Transit Authority","90078","Independent Public Agency","Full Reporter","Suburban City",0,540067,143,140,38306562,"Concord","Contra Costa","2477 Arnold Industrial Way","94520",55,1
+"35","Cerritos","90259","Local Government","Reduced Reporter","Suburban City",0,50004,9,16,1505685,"Cerritos","Los Angeles","","",26,1
+"36","Chemehuevi Indian Tribe","99316","Other","Reduced Reporter","Suburban City",0,NA,NA,2,2216280,"Havasu Lake","San Bernardino","","",NA,0
+"37","Chowchilla","91071","Local Government","","",0,NA,NA,NA,NA,"Chowchilla","","130 S Second Street","93610",NA,0
+"38","City and County of San Francisco","90015","Independent Public Agency","Full Reporter","Principal City",0,883963,49,1014,1397662475,"San Francisco","San Francisco","1 South Van Ness 7th Flr","94103",40,1
+"39","CIty of Dinuba","9R02-91040","Local Government","Rural Reporter","Small Rural City",0,NA,NA,6,NA,"Dinuba","Tulare","1088 E Kamm Avenue","93618",15,1
+"40","Claremont","90296","Local Government","","",0,NA,NA,NA,NA,"Claremont","","1616 Monte Vista Avenue","91711",NA,0
+"41","Clovis - Transit","","Local Government","","",0,NA,NA,NA,NA,"Clovis","","155 N Sunnyside Avenue","93611",28,1
+"42","Colusa County Transit Agency","91112","Independent Public Agency","","",0,NA,NA,NA,NA,"Colusa","","715 D Street","95932",NA,0
+"43","Commerce","90043","Local Government","Full Reporter","Suburban City",0,12997,11,14,5233802,"Commerce","Los Angeles","5555 Jillson Street","90040",14,1
+"44","Compton","90260","Local Government","Reduced Reporter","Suburban City",0,97550,10,7,1052783,"Compton","Los Angeles","205 S Willowbrook Avenue","90220",15,1
+"45","Corcoran - Transit Division","91002","Local Government","","",0,NA,NA,NA,NA,"Corcoran","","832 Whitley Avenue","93212",NA,0
+"46","Corona","90052","Local Government","Reduced Reporter","Principal City",1,166785,41,15,3769544,"Corona","Riverside","400 S Vicentia Avenue Ste 210","92882",21,1
+"47","County of Placer","90196","Independent Public Agency","Full Reporter","Small Rural City",0,357463,471,38,16212174,"Auburn","Placer","3091 Country Center Drive Ste 220","95603",31,1
+"48","County of Sacramento Municipal Services Agency Department of Transportation","9R02-90216","Local Government","Rural Reporter","Principal City",0,NA,NA,13,NA,"Sacramento","Sacramento","","",22,1
+"49","County of Shasta Department of Public Works","9R02-99438","Local Government","Rural Reporter","Principal City",0,NA,NA,0,NA,"Redding","Shasta","","",44,1
+"50","County of Siskiyou","9R02-91048","Local Government","Rural Reporter","Small Rural City",0,NA,NA,8,NA,"Yreka","Siskiyou","","",13,1
+"51","County of Sonoma","90089","Local Government","Full Reporter","Principal City",0,509142,395,66,16471112,"Santa Rosa","Sonoma","","",NA,0
+"52","County of Ventura","90298","Local Government","Reduced Reporter","Suburban City",0,14212,4,4,584545,"Ventura","Ventura","","",21,1
+"53","Cudahy","90262","Local Government","Reduced Reporter","Suburban City",0,24103,1,6,275498,"Cudahy","Los Angeles","","",15,1
+"54","Culver City","90039","Local Government","Full Reporter","Suburban City",1,341718,33,46,24619672,"Culver City","Los Angeles","4343 Duquesne Avenue","90232",9,1
+"55","Delano","90238","Local Government","Reduced Reporter","Small Rural City",0,53041,50,9,2026213,"Delano","Kern","PO Box 3010","93216",24,1
+"56","Downey","90263","Local Government","Reduced Reporter","Suburban City",0,111772,13,16,2539257,"Downey","Los Angeles","7850 Quill Drive","90242",28,1
+"57","Duarte","90264","Local Government","Reduced Reporter","Suburban City",0,21724,7,2,809799,"Duarte","Los Angeles","","",20,1
+"58","Eastern Sierra Transit Authority","9R02-91062","Independent Public Agency","Rural Reporter","Small Rural City",0,NA,NA,44,NA,"Bishop","Inyo","PO Box 1357","93515",6,1
+"59","El Dorado County Transit Authority","90229","Independent Public Agency","Full Reporter","Small Rural City",1,147200,1551,34,11385148,"Diamond Springs","El Dorado","6565 Commerce Drive","95619",11,1
+"60","El Dorado County Transportation Commission","","MPO/RTPA","","",1,NA,NA,NA,NA,"Placerville","","2828 Easy Street Ste 1","95667",NA,0
+"61","El Monte","90265","Local Government","Reduced Reporter","Suburban City",1,201889,10,13,3017151,"El Monte","Los Angeles","3990 Arden Drive","91731",23,1
+"62","Elk Grove","90205","Local Government","Full Reporter","Small Rural City",0,171059,42,54,12890543,"Elk Grove","Sacramento","8401 Laguna Palms Way","95758",NA,0
+"63","Escalon","9R02-91078","Local Government","Rural Reporter","Small Rural City",1,NA,NA,2,NA,"Escalon","San Joaquin","2060 McHenry Avenue","95320",20,1
+"64","Eureka","9R02-91093","Local Government","Rural Reporter","Principal City",0,NA,NA,4,NA,"Eureka","Humboldt","","",22,1
+"65","Fairfield","90092","Local Government","Full Reporter","Suburban City",0,505849,129,43,25766099,"Fairfield","Solano","2000 Cadenasso Drive","94533",NA,0
+"66","Folsom","90220","Local Government","Reduced Reporter","Principal City",0,78038,24,7,2079819,"Folsom","Sacramento","","",21,1
+"67","Foothill Transit","90146","Independent Public Agency","Full Reporter","Suburban City",1,1515836,327,296,120996702,"West Covina","Los Angeles","","",8,1
+"68","Fresno","90027","Local Government","Full Reporter","Principal City",1,527438,133,150,77990171,"Fresno","Fresno","2223 G Street","93706",117,1
+"69","Fresno Council of Governments (Fresno COG)","","MPO/RTPA","","",1,NA,NA,NA,NA,"Fresno","","2035 Tulare Street Ste 201","93721",NA,0
+"70","Fresno County Rural Transit Agency","9R02-91007","Independent Public Agency","Rural Reporter","Principal City",1,NA,NA,90,NA,"Fresno","Fresno","2035 Tulare Street Ste 201","93721",NA,0
+"71","Gardena","90042","Local Government","Full Reporter","Principal City",0,463968,40,49,22483291,"Gardena","Los Angeles","13999 S Western Avenue","90249",20,1
+"72","Glendale","99423","Local Government","Full Reporter","Principal City",0,223467,39,34,10052408,"Glendale","Los Angeles","1759 Gardena Avenue","91204",143,1
+"73","Glendora","90266","Local Government","Reduced Reporter","Suburban City",0,51290,19,13,858716,"Glendora","Los Angeles","116 E Foothill Blvd","91741",21,1
+"74","Glenn Transit Service","9R02-91088","Independent Public Agency","Rural Reporter","Small Rural City",0,NA,NA,4,NA,"Willows","Glenn","225 N Tehama Street","95988",NA,0
+"75","Gold Coast Transit","90035","Independent Public Agency","Full Reporter","Principal City",1,367260,84,72,35662954,"Oxnard","Ventura","1901 Auto Center Drive","93036",10,1
+"76","Golden Empire Transit District","90004","Independent Public Agency","Full Reporter","Principal City",0,497989,111,87,32370558,"Bakersfield","Kern","1830 Golden State Avenue","93301",9,1
+"77","Golden Gate Bridge, Highway and Transportation District","90016","Independent Public Agency","Full Reporter","Principal City",0,896089,145,154,129705916,"San Francisco","San Francisco","","",20,1
+"78","Guadalupe","9R02-91043","Local Government","Rural Reporter","Small Rural City",0,NA,NA,3,NA,"GUADALUPE","","","",NA,0
+"79","Humboldt Transit Authority","9R02-91036","Independent Public Agency","Rural Reporter","Principal City",0,NA,NA,14,NA,"Eureka","Humboldt","133 V Street","95501",7,1
+"80","Imperial County Transportation Commission","90226","MPO/RTPA","Full Reporter","Principal City",0,179023,425,28,7313641,"El Centro","Imperial","1503 N Imperial Avenue Ste 104","92243",39,1
+"81","Inglewood","90268","Local Government","Reduced Reporter","Suburban City",0,222357,21,12,972911,"Inglewood","Los Angeles","One Manchester Blvd","90301",32,1
+"82","Kern COG","","MPO/RTPA","","",0,NA,NA,NA,NA,"Bakersfield","","","",NA,0
+"83","Kern Regional Transit","9R02-91059","Independent Public Agency","Rural Reporter","Principal City",0,NA,NA,45,NA,"Bakersfield","Kern","2700 M Street Ste 400","93301",NA,0
+"84","Kings County Area Public Transit Agency","90200","Independent Public Agency","Full Reporter","Principal City",0,70408,13,21,4735679,"Hanford","Kings","610 W 7th Street","93230",9,1
+"85","Kings County Association of Governments (KCAG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Lemoore","","","",NA,0
+"86","La Mirada","90024","Local Government","","",0,NA,NA,NA,NA,"La Mirada","","13700 La Mirada Blvd","90638",NA,0
+"87","Laguna Beach","90119","Local Government","Full Reporter","Suburban City",0,22723,9,23,3678884,"Laguna Beach","Orange","","",19,1
+"88","Lake Transit Authority","9R02-91053","Independent Public Agency","Rural Reporter","Principal City",0,NA,NA,26,NA,"Visalia","Tulare","525 South Main Street Ste G","95482",7,1
+"89","Lassen Transit Service Agency","9R02-91098","Independent Public Agency","Rural Reporter","Principal City",1,NA,NA,5,NA,"Susanville","Lassen","707 Nevada Street Ste 4","96130",NA,0
+"90","Lawndale","90280","Local Government","Reduced Reporter","Suburban City",0,32769,2,2,470270,"Lawndale","Los Angeles","","",18,1
+"91","Livermore / Amador Valley Transit Authority","90144","Independent Public Agency","Full Reporter","Principal City",1,233853,40,62,31303049,"Livermore","Alameda","1362 Rutan Court Ste 100","94551",28,1
+"92","Lodi","90175","Local Government","Reduced Reporter","Small Rural City",1,67121,16,16,4879737,"Lodi","San Joaquin","PO Box 3006","95240",22,1
+"93","Lompoc","90149","Local Government","Reduced Reporter","Small Rural City",1,55666,40,23,4973948,"Lompoc","Santa Barbara","1300 W Laurel Street  Bldg 4A","93436",16,1
+"94","Long Beach Transit","90023","Other","Full Reporter","Principal City",1,849028,100,197,117417425,"Long Beach","Los Angeles","","",8,1
+"95","Los Angeles","90147","Local Government","Full Reporter","Principal City",1,4849476,465,359,150833167,"Los Angeles","Los Angeles","","",12,1
+"96","Los Angeles County Department of Public Works - Avocado Heights","90270","Local Government","Reduced Reporter","Suburban City",0,15500,9,1,251372,"Alhambra","Los Angeles","","",NA,0
+"97","Los Angeles County Department of Public Works - East L.A.","90271","Local Government","Reduced Reporter","Suburban City",0,126496,8,13,2510283,"Alhambra","Los Angeles","","",NA,0
+"98","Los Angeles County Department of Public Works - East Valinda","90272","Local Government","Reduced Reporter","Suburban City",0,22822,15,1,266864,"Alhambra","Los Angeles","","",NA,0
+"99","Los Angeles County Department of Public Works - South Whittier","90276","Local Government","Reduced Reporter","Suburban City",0,86883,5,4,1091545,"Alhambra","Los Angeles","","",NA,0
+"100","Los Angeles County Dept. of Public Works - Athens Shuttle Service","90269","Local Government","Reduced Reporter","Suburban City",0,23159,25,1,243360,"Alhambra","Los Angeles","","",NA,0
+"101","Los Angeles County Dept. of Public Works - Florence-Firestone","90273","Local Government","Reduced Reporter","Suburban City",0,63387,7,2,331191,"Alhambra","Los Angeles","","",NA,0
+"102","Los Angeles County Dept. of Public Works - King Medical Center Shuttle Service","90274","Local Government","Reduced Reporter","Suburban City",0,12358,49,2,391677,"Alhambra","Los Angeles","","",NA,0
+"103","Los Angeles County Dept. of Public Works - Lennox Shuttle","90275","Local Government","Reduced Reporter","Suburban City",0,27897,16,1,233086,"Alhambra","Los Angeles","","",NA,0
+"104","Los Angeles County Dept. of Public Works - Willowbrook Shuttle","90278","Local Government","Reduced Reporter","Suburban City",0,24798,36,2,377958,"Alhambra","Los Angeles","","",NA,0
+"105","Los Angeles County Metropolitan Transportation Authority","90154","Independent Public Agency","Full Reporter","Principal City",1,8595119,1459,3458,3556381509,"Los Angeles","Los Angeles","One Gateway Plaza  MS 99-23-3","90012",77,1
+"106","Lynwood","90281","Local Government","Reduced Reporter","Suburban City",0,72015,5,4,820114,"Lynwood","Los Angeles","","",12,1
+"107","Madera","90199","Local Government","Reduced Reporter","Principal City",0,66225,16,17,2134957,"Madera","Madera","205 W 4th Street","93637",27,1
+"108","Madera County","9R02-91005","Local Government","Rural Reporter","Principal City",0,NA,NA,6,NA,"Madera","Madera","200 West 4th Street","93637",NA,0
+"109","Madera County Transportation Commission (Madera CTC)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Madera","","","",NA,0
+"110","Manteca","90217","Local Government","Reduced Reporter","Small Rural City",0,81345,21,5,2902291,"Manteca","San Joaquin","220 Moffat Blvd","95336",43,1
+"111","Marin County Transit District","90234","Independent Public Agency","Full Reporter","Principal City",0,262573,520,85,43062740,"San Rafael","Marin","711 Grand Avenue Ste 110","94901",10,1
+"112","Mariposa County Department of Public Works","91082","Local Government","","",0,NA,NA,NA,NA,"Mariposa","","4639 Ben Hur Road","95338",NA,0
+"113","Maywood","90284","Local Government","Reduced Reporter","Suburban City",0,27748,2,5,417380,"Maywood","Los Angeles","","",9,1
+"114","Mendocino Transit Authority","9R02-91047","Independent Public Agency","Rural Reporter","Principal City",0,NA,NA,23,NA,"Ukiah","Mendocino","241 Plant Road","95482",NA,0
+"115","Merced County Association of Governments (MCAG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Merced","","","",NA,0
+"116","Metropolitan Transportation Commission (MTC)","","MPO/RTPA","","",1,NA,NA,NA,NA,"Oakland","","","",NA,0
+"117","Modesto","90007","Local Government","Full Reporter","Principal City",0,253607,59,63,21276152,"Modesto","Stanislaus","PO Box 642","95354",NA,0
+"118","Modoc County Transportation Commission","","MPO/RTPA","","",0,NA,NA,NA,NA,"Alturas","","108 S Main Street","96101",NA,0
+"119","Modoc Transportation Agency","9R02-91008","Local Government","Rural Reporter","Small Rural City",0,NA,NA,3,NA,"Alturas","Modoc","","",NA,0
+"120","Monrovia Public Works","90285","Local Government","","",0,NA,NA,NA,NA,"Monrovia","","600 South Mountain Avenue","91016",NA,0
+"121","Montebello","90041","Local Government","Full Reporter","Suburban City",0,315074,151,107,31314137,"Montebello","Los Angeles","","",8,1
+"122","Montebello Bus Lines","","Independent Public Agency","","",0,NA,NA,NA,NA,"Montebello","","400 S Taylor Avenue","90640",NA,0
+"123","Monterey County, Transportation Agency (TAMC)","","Local Government","","",0,NA,NA,NA,NA,"Salinas","","55-B Plaza Circle","93901",NA,0
+"124","Monterey Park","90286","Local Government","Reduced Reporter","Suburban City",0,62240,8,10,1625168,"Monterey Park","Los Angeles","320 W Newmark Avenue","91754",43,1
+"125","Monterey-Salinas Transit","90062","Independent Public Agency","Full Reporter","Small Rural City",1,437907,294,120,76577503,"Monterey","Monterey","","",11,1
+"126","Moorpark","90227","Local Government","Reduced Reporter","Suburban City",0,36828,12,2,967307,"Moorpark","Ventura","799 Moorpark Avenue","93021",20,1
+"127","Morongo Basin Transit Authority","9R02-91090","Independent Public Agency","Rural Reporter","Suburban City",1,NA,NA,19,NA,"Joshua Tree","San Bernardino","62405 Verbena Road","92252",NA,0
+"128","Morro Bay","","Local Government","","",0,NA,NA,NA,NA,"Morro Bay","","595 Harbor Street","93442",NA,0
+"129","Mountain Area Regional Transit Authority","9R02-91012","Independent Public Agency","Rural Reporter","Suburban City",0,NA,NA,11,NA,"Big Bear Lake","San Bernardino","PO Box 1501","92315",NA,0
+"130","Napa Valley Transportation Authority","90088","Independent Public Agency","Full Reporter","Principal City",0,138000,45,41,10810380,"Napa","Napa","625 Burnell Street","94559-2951",9,1
+"131","Needles","9R02-91020","Local Government","Rural Reporter","Suburban City",0,NA,NA,1,NA,"Needles","San Bernardino","817 Third Street","92363",NA,0
+"132","Nevada County Transit Services","9R02-91095","Independent Public Agency","Rural Reporter","Small Rural City",1,NA,NA,10,NA,"Nevada City","Nevada","950 Maidu Avenue","95959",21,1
+"133","Norco","","Local Government","","",0,NA,NA,NA,NA,"Norco","","2870 Clark Avenue","92860",NA,0
+"134","North County Transit District","90030","Independent Public Agency","Full Reporter","Small Rural City",1,849420,403,233,112373383,"Oceanside","San Diego","","",11,1
+"135","Norwalk","90022","Independent Public Agency","Full Reporter","Suburban City",0,637365,37,29,15555959,"Norwalk","Los Angeles","12700 Norwalk Blvd","90650",35,1
+"136","Ojai","9R02-91058","Local Government","Rural Reporter","Suburban City",0,NA,NA,2,NA,"Ojai","Ventura","408 S Signal Street","93023",20,1
+"137","Omnitrans","90029","Independent Public Agency","Full Reporter","Principal City",0,1500107,466,250,113078655,"San Bernardino","San Bernardino","","",18,1
+"138","Orange County Transportation Authority","90036","Independent Public Agency","Full Reporter","Principal City",0,2869428,435,1495,303853586,"Orange","Orange","550 S Main Street","92863",65,1
+"139","Palo Verde Valley Transit Agency","99454","Independent Public Agency","","",0,NA,NA,NA,NA,"Blythe","","415 N Main Street","92225",NA,0
+"140","Palos Verdes Peninsula Transit Authority","90287","Independent Public Agency","Reduced Reporter","Suburban City",0,64272,22,27,2237184,"Palos Verdes Peninsula","Los Angeles","PO Box 2656","90274",NA,0
+"141","Pasadena","99424","Local Government","Full Reporter","Principal City",0,142250,23,31,8933820,"Pasadena","Los Angeles","221 E Walnut Street Ste 199","91101",NA,0
+"142","Peninsula Corridor Joint Powers Board","90134","Independent Public Agency","Full Reporter","Suburban City",0,3614716,425,141,456033767,"San Carlos","San Mateo","","",15,1
+"143","Petaluma","90213","Local Government","Full Reporter","Principal City",0,60870,12,16,2887652,"Petaluma","Sonoma","555 N McDowell Blvd","94954",21,1
+"144","Pico Rivera","90288","Local Government","","",0,NA,NA,NA,NA,"Pico Rivera","","6615 Passons Blvd","90660",NA,0
+"145","Plumas County Transportation Commission","9R02-91119","MPO/RTPA","Rural Reporter","Small Rural City",0,NA,NA,8,NA,"Quincy","Plumas","1834 E Main Street","95971",NA,0
+"146","Plumas Transit","","Independent Public Agency","","",0,NA,NA,NA,NA,"Quincy","","711 E Main Street","95971",NA,0
+"147","Pomona Valley Transportation Authority","99425","Independent Public Agency","","",0,NA,NA,NA,NA,"La Verne","","2120 Foothill Blvd Ste 116","91750",NA,0
+"148","Porterville","90198","Local Government","Reduced Reporter","Small Rural City",0,75691,49,13,5788400,"Porterville","Tulare","291 N Main Street","93257",NA,0
+"149","Redding Area Bus Authority","90093","Independent Public Agency","Full Reporter","Principal City",0,117478,100,28,8522825,"Redding","Shasta","777 Cypress Avenue","96001",20,1
+"150","Redlands","","Local Government","","",0,NA,NA,NA,NA,"Redlands","","PO Box 3005","92373",NA,0
+"151","Redondo Beach","90214","Local Government","Full Reporter","Suburban City",0,67233,13,14,3853674,"Redondo Beach","Los Angeles","415 Diamond Street","90277",33,1
+"152","Redwood Coast Transit Authority","9R02-91097","Independent Public Agency","Rural Reporter","Principal City",1,NA,NA,8,NA,"Visalia","Tulare","1275 4th Street Ste 733","95404",6,1
+"153","Ridgecrest","9R02-91006","Local Government","Rural Reporter","Small Rural City",0,NA,NA,5,NA,"Ridgecrest","Kern","100 W California Avenue","93555",15,1
+"154","Rio Vista","9R02-91014","Local Government","Rural Reporter","Suburban City",0,NA,NA,3,NA,"Rio Vista","Solano","1 Harbor Center Ste 130","94585",NA,0
+"155","Riverside","90086","Local Government","","",1,NA,NA,NA,NA,"Riverside","","3900 Main Street","92522",NA,0
+"156","Riverside County Transportation Commission","90218","MPO/RTPA","Full Reporter","Principal City",1,1800000,2100,49,282674,"Riverside","Riverside","4080 Lemon Street 3rd Flr","92501",26,1
+"157","Riverside Transit Agency","90031","Independent Public Agency","Full Reporter","Principal City",1,2018724,2725,293,84611533,"Riverside","Riverside","1825 Third Street","92507",38,1
+"158","Rosemead","90289","Local Government","Reduced Reporter","Suburban City",0,54908,5,5,817427,"Rosemead","Los Angeles","8838 East Valley Blvd","91770",6,1
+"159","Roseville","90168","Local Government","Reduced Reporter","Principal City",0,137213,43,24,8556046,"Roseville","Placer","316 Vernon Street Ste 150","95678",17,1
+"160","Sacramento Area COG (SACOG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Sacramento","","","",NA,0
+"161","Sacramento County Department of Transportation","","Independent Public Agency","","",0,NA,NA,NA,NA,"Sacramento","","4111 Branch Center Road","95827",NA,0
+"162","Sacramento Regional Transit District","90019","Independent Public Agency","Full Reporter","Principal City",0,1031946,226,232,182219059,"Sacramento","Sacramento","1400  29th Street","95812",10,1
+"163","San Benito County LTA","9R02-91009","Independent Public Agency","Rural Reporter","Small Rural City",1,NA,NA,18,NA,"Hollister","San Benito","330 Tres Pinos Road Ste C7","95023",37,1
+"164","San Diego Association of Governments (SANDAG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"San Diego","","401 B Street Ste 800","92101",NA,0
+"165","San Diego Metropolitan Transit System","90026","Independent Public Agency","Full Reporter","Principal City",1,2462707,720,793,420980160,"San Diego","San Diego","1255 Imperial Avenue Ste 1000","92101",29,1
+"166","San Francisco Bay Area Rapid Transit District","90003","Independent Public Agency","Full Reporter","Principal City",0,1834004,113,566,1267968890,"Oakland","Alameda","","",14,1
+"167","San Francisco Bay Area Water Emergency Transportation Authority","90225","Independent Public Agency","Full Reporter","Principal City",0,281832,127,10,138686602,"San Francisco","San Francisco","","",21,1
+"168","San Joaquin COG (SJCOG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Stockton","","","",NA,0
+"169","San Joaquin Regional Transit District","90012","Independent Public Agency","Full Reporter","Principal City",0,744835,1426,92,47075745,"Stockton","San Joaquin","PO Box 201010","95201",10,1
+"170","San Luis Obispo","90156","Local Government","Full Reporter","Principal City",0,46997,22,12,3581723,"San Luis Obispo","San Luis Obispo","919 Palm Street","93401",34,1
+"171","San Luis Obispo COG (SLOCOG)","","MPO/RTPA","","",1,NA,NA,NA,NA,"San Luis Obispo","","1114 Marsh Street","93401",NA,0
+"172","San Luis Obispo Regional Transit Authority","90206","Independent Public Agency","Full Reporter","Principal City",0,206008,130,47,13203518,"San Luis Obispo","San Luis Obispo","179 Cross Street Ste A","93401",8,1
+"173","San Mateo County Transit District","90009","Independent Public Agency","Full Reporter","Suburban City",0,777905,97,399,167333762,"San Carlos","San Mateo","PO Box 1306","94070-1306",21,1
+"174","San Pablo","","Local Government","","",1,NA,NA,NA,NA,"San Pablo","","1000 Gateway Avenue","94806",NA,0
+"175","Santa Barbara County Association of Governments (SBCAG)","90303","MPO/RTPA","","",1,NA,NA,NA,NA,"Santa Barbara","","","",575,1
+"176","Santa Barbara Metropolitan Transit District","90020","Independent Public Agency","Full Reporter","Principal City",0,199668,52,93,28487336,"Santa Barbara","Santa Barbara","550 Olive Street","93101",13,1
+"177","Santa Clara Valley Transportation Authority","90013","Independent Public Agency","Full Reporter","Principal City",1,1956598,346,642,699549825,"San Jose","Santa Clara","3331 N First Street","95134",70,1
+"178","Santa Clarita","90171","Local Government","Full Reporter","Suburban City",0,252271,78,91,26536819,"Santa Clarita","Los Angeles","28250 Constellation Road","91355",6,1
+"179","Santa Cruz Metropolitan Transit District","90006","Independent Public Agency","Full Reporter","Principal City",0,274146,446,105,49013366,"Santa Cruz","Santa Cruz","110 Vernon Street","95060",9,1
+"180","Santa Fe Springs","90290","Local Government","","",0,NA,NA,NA,NA,"Santa Fe Springs","","11710 Telegraph Road","90670",NA,0
+"181","Santa Maria","90087","Local Government","Full Reporter","Principal City",1,120097,34,26,8869483,"Santa Maria","Santa Barbara","110 S Pine Street Ste 221","93458",17,1
+"182","Santa Monica","90008","Local Government","Full Reporter","Principal City",1,855918,59,172,88156921,"Santa Monica","Los Angeles","","",6,1
+"183","Santa Rosa","90017","Local Government","Full Reporter","Principal City",1,181594,51,36,12832003,"Santa Rosa","Sonoma","45 Stony Point Road","95401",100,1
+"184","Shasta Regional Transportation Agency (SRTA)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Redding","","1255 East Street Ste 202","96001",NA,0
+"185","Simi Valley","90050","Local Government","Reduced Reporter","Suburban City",1,126878,47,17,7812922,"Simi Valley","Ventura","2929 Tapo Canyon Road","93063",21,1
+"186","Siskiyou County Transit","","Independent Public Agency","","",0,NA,NA,NA,NA,"Yreka","","190 Greenhorn Road","96097",NA,0
+"187","Solano County Transit","90232","Independent Public Agency","Full Reporter","Principal City",0,149473,65,41,18474403,"Vallejo","Solano","311 Sacramento Street","94590",11,1
+"188","Solano Transportation Authority","","Local Government","","",0,NA,NA,NA,NA,"Suisun","","One Harbor Center Ste 130","94583",33,1
+"189","Solvang","9R02-91028","Local Government","Rural Reporter","Small Rural City",0,NA,NA,3,NA,"Solvang","Santa Barbara","411 Second Street","93463",NA,0
+"190","Sonoma County Transit","","Independent Public Agency","","",0,NA,NA,NA,NA,"Santa Rosa","","355 W Robles Avenue","95407",NA,0
+"191","Sonoma-Marin Area Rail Transit District","90299","Independent Public Agency","Full Reporter","Principal City",1,763651,2596,11,61569671,"Petaluma","Sonoma","","",14,1
+"192","South El Monte","","Local Government","","",0,NA,NA,NA,NA,"South El Monte","","1556 Central Avenue","91733",NA,0
+"193","South Gate","90291","Local Government","Reduced Reporter","Suburban City",0,99578,8,14,1776673,"South Gate","Los Angeles","4900 Southern Avenue","90280",14,1
+"194","Southern California Association of Governments (SCAG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Los Angeles","","","",NA,0
+"195","Southern California Regional Rail Authority","90151","Independent Public Agency","Full Reporter","Principal City",0,8341002,2291,195,314485845,"Los Angeles","Los Angeles","","",25,1
+"196","Stanislaus COG (StanCOG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Modesto","","1111 I Street Ste 308","95354",NA,0
+"197","Stanislaus Regional Transit","90236","Independent Public Agency","Reduced Reporter","Principal City",1,547899,1492,29,6379272,"Modesto","Stanislaus","912 11th Street","95354",9,1
+"198","SunLine Transit Agency","90079","Independent Public Agency","Full Reporter","Suburban City",0,460275,1120,96,49074315,"Thousand Palms","Riverside","32-505 Harry Oliver Trail","92276",17,1
+"199","Susanville Indian Rancheria","99256","Other","Reduced Reporter","Principal City",0,NA,NA,4,168893,"Susanville","Lassen","","",NA,0
+"200","Taft","91066","Local Government","","",0,NA,NA,NA,NA,"Taft","","209 E Kern Street","93268",NA,0
+"201","Tahoe MPO (TMPO)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Stateline","","","",NA,0
+"202","Tahoe Transportation District","91092","Independent Public Agency","","",0,NA,NA,NA,NA,"","","","",NA,0
+"203","Tehama County","9R02-91089","Local Government","Rural Reporter","Small Rural City",0,NA,NA,12,NA,"Gerber","Tehama","","",7,1
+"204","Tehama County Transportation Commission","","MPO/RTPA","","",1,NA,NA,NA,NA,"Gerber","","9380 San Benito Avenue","96038",NA,0
+"205","The Eastern Contra Costa Transit Authority","90162","Independent Public Agency","Full Reporter","Suburban City",1,318700,225,78,29407492,"Antioch","Contra Costa","801 Wilbur Avenue","94509",10,1
+"206","Thousand Oaks","90165","Local Government","Reduced Reporter","Principal City",1,414742,167,28,7422964,"Thousand Oaks","Ventura","2100 E Thousand Oaks Blvd","91362",16,1
+"207","Torrance","90010","Local Government","Full Reporter","Principal City",0,606847,103,84,25610872,"Torrance","Los Angeles","","",20,1
+"208","Town of Truckee","9R02-91101","Local Government","Rural Reporter","Principal City",1,NA,NA,6,NA,"Truckee","Nevada","10183 Truckee Airport Road","96161",24,1
+"209","Tracy","90197","Local Government","Reduced Reporter","Small Rural City",1,85182,20,13,4614693,"Tracy","San Joaquin","50 E 6th Street","95376",NA,0
+"210","Transit Joint Powers Authority for Merced County","90173","Independent Public Agency","Full Reporter","Principal City",0,136957,310,52,12524081,"Merced","Merced","369 W 18th Street","95340",NA,0
+"211","Trinity County","9R02-91035","Local Government","Rural Reporter","Small Rural City",0,NA,NA,4,NA,"Weaverville","Trinity","PO Box 2490","96093",NA,0
+"212","Tulare","90244","Local Government","Full Reporter","Small Rural City",0,63515,21,10,3046436,"Tulare","Tulare","411 E Kern Avenue","93274",NA,0
+"213","Tulare County Area Transit","9R02-91055","Independent Public Agency","Rural Reporter","Principal City",1,NA,NA,24,NA,"Visalia","Tulare","5961 S Mooney Blvd","93277",NA,0
+"214","Tulare County Association of Governments (TCAG)","","MPO/RTPA","","",0,NA,NA,NA,NA,"Visalia","","","",40,1
+"215","Tulare County Regional Transit Agency","","Local Government","","",1,NA,NA,NA,NA,"Visalia","","210 N Church Street Ste B","93291",NA,0
+"216","Tuolumne County Transit","9R02-91057","Independent Public Agency","Rural Reporter","Principal City",0,NA,NA,20,NA,"Sonora","Tuolumne","2 S Green Street","95370",NA,0
+"217","Turlock","90201","Local Government","Full Reporter","Small Rural City",0,87867,22,10,8282704,"Turlock","Stanislaus","1418 N Golden State Blvd Ste 1","95380",20,1
+"218","Union City","90161","Local Government","Reduced Reporter","Suburban City",0,72991,18,18,4871279,"Union City","Alameda","34009 Alvarado-Niles Road","94587",28,1
+"219","University of California, Davis","90142","Other","Full Reporter","Small Rural City",0,72611,13,35,6095562,"Davis","Yolo","","",NA,0
+"220","Vacaville","90155","Local Government","Reduced Reporter","Suburban City",0,100032,27,15,2700891,"Vacaville","Solano","1001 Allison Drive","95687",21,1
+"221","Ventura County Transportation Commission","90164","MPO/RTPA","Full Reporter","Suburban City",0,199943,28,45,11035292,"Ventura","Ventura","751 E Daily Drive Ste 420","93010",28,1
+"222","Victor Valley Transit Authority","90148","Independent Public Agency","Full Reporter","Suburban City",1,344288,327,302,34090443,"Hesperia","San Bernardino","17150 Smoke Tree Street","92345",10,1
+"223","Visalia","90091","Local Government","Full Reporter","Principal City",1,136246,44,39,10875718,"Visalia","Tulare","425 E Oak Avenue Ste 301","93291",11,1
+"224","West Covina","90293","Local Government","Reduced Reporter","Suburban City",0,107634,16,8,1301723,"West Covina","Los Angeles","125 E College Street","91723",25,1
+"225","West Hollywood","90294","Local Government","Reduced Reporter","Suburban City",0,35288,2,10,2016784,"West Hollywood","Los Angeles","8300 Santa Monica Blvd","90069",20,1
+"226","Western Contra Costa Transit Authority","90159","Independent Public Agency","Full Reporter","Suburban City",0,64925,20,50,11422044,"Pinole","Contra Costa","601 Walter Avenue","94564",7,1
+"227","Whittier - Transit","90295","Local Government","","",0,NA,NA,NA,NA,"Whittier","","13230 Penn Street","90602",NA,0
+"228","Yolo County Transportation District","90090","Independent Public Agency","Full Reporter","Small Rural City",0,528880,109,50,17914239,"Woodland","Yolo","350 Industrial Way","95776",7,1
+"229","Yosemite Area Regional Transportation System","9R02-91070","Independent Public Agency","Rural Reporter","Principal City",0,NA,NA,10,NA,"Merced","Merced","","",NA,0
+"230","Yuba-Sutter Transit Authority","90061","Independent Public Agency","Full Reporter","Small Rural City",1,142481,813,34,11609661,"Marysville","Yuba","2100 B Street","95901",11,1
+"231","Yurok Tribe","99262","Other","Reduced Reporter","Small Rural City",0,NA,NA,4,549612,"Klamath","Del Norte","","",46,1
