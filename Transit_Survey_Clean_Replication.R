@@ -4,8 +4,8 @@ library(writexl)
 library(tidyr)
 library(ggplot2)
 library(sjPlot)
+library(modelsummary)
 
-setwd("~/Box Sync/Firmographs/Firmographs2022/Survey")
 
 #Clean survey-----
 #read in qualtrics file (raw)
@@ -22,9 +22,9 @@ surv$indicator <- as.integer(surv$indicator)
 surv <- subset(surv, surv$indicator==1)
 
 #read in original sampling frame to ID agency characteristics
-samp_frame <- read_excel("transit_survey.xlsx")
+samp_frame <- read.csv("transit_survey.csv")
 samp_frame$survey_response <- ifelse(samp_frame$AgencyName %in% surv$Q67, 1, 0)
-#write_xlsx(samp_frame, "transit_survey.xlsx")
+
 
 ####Multiple responses-----
 # Identify the most complete response for each agency
@@ -80,10 +80,48 @@ result_df_filled$TSP <- ifelse(result_df_filled$Q8_1=="Procuring"|result_df_fill
                                  result_df_filled$Q7_1=="Yes" , 1,0)
 sum(na.omit(result_df_filled$TSP))
 
-#which firms adopt TSP?
-result_df_filled$Q67[!(is.na(result_df_filled$TSP))]
+#which agencies adopt TSP?
+x <- result_df_filled$Q67[!(is.na(result_df_filled$TSP))]
 
-####Plots-----
+
+
+#add tsp indicator
+samp_frame$tsp <- ifelse(samp_frame$AgencyName %in% x, 1, 0)
+
+#NTD update----
+
+#upate agency information
+
+info <- read_xlsx("2021 Agency Information.xlsx")
+revenue <- read_xlsx("2021 Funding Sources_static.xlsx", sheet=3)
+info <- subset(info, info$State=="CA")
+info$`NTD ID` <- gsub("0RO2-", "", info$`NTD ID`)
+info$`NTD ID` <- gsub("9R02-", "", info$`NTD ID`)
+info$`NTD ID` <- gsub("6R02-", "", info$`NTD ID`)
+transit_survey$NTDID <- gsub("9R02-", "", transit_survey$NTDID)
+transit_survey$NTDID <- gsub("6R02-", "", transit_survey$NTDID)
+setdiff(transit_survey$NTDID, info$`NTD ID`)
+info <- subset(info, info$`NTD ID` %in% transit_survey$NTDID)
+info$NTDID=info$`NTD ID`
+info$VOMS=info$`Total VOMS`
+info$pop= info$`Service Area Pop`
+info$mile = info$`Service Area Sq Miles`
+info <- info %>% select(NTDID, pop, mile, VOMS)
+revenue$NTDID = revenue$`NTD ID`
+revenue$revenue =revenue$Total
+revenue <- revenue %>% select(revenue, NTDID)
+info$NTD_21 <- rep(1, length(info$NTDID))
+#delete old NTD values
+samp_frame$pop=NULL
+samp_frame$VOMS=NULL
+samp_frame$revenue=NULL
+samp_frame$mile=NULL
+transit_survey <- merge(samp_frame, revenue, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
+transit_survey <- merge(transit_survey, info, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
+
+write.csv(transit_survey, "transit_survey_tsp.csv")
+
+####Adoption Plots-----
 tspadopt <- result_df_filled %>% group_by(Q8_1, OrgType) %>% summarize(Count=n())
 ggplot(na.omit(subset(tspadopt, tspadopt$Q8_1 !="Not at all")), aes(x=Q8_1, y=Count, fill=OrgType))+geom_bar(stat="identity", position="dodge")+
   xlab("Transit Signal Priority Adoption Stage") +ylab("Count of Agencies")+
@@ -224,39 +262,10 @@ table(result_df_filled$size[result_df_filled$Q8_12=="Using Systemwide"|result_df
 
 
 
-#NTD ANALYSIS----
-#sampling frame
-samp_frame <- read_excel("transit_survey.xlsx")
 
-#Update agency information with recent numbers (2022, since our data collection begins here, instead of 2018)
-transit_survey <- read_xlsx("~/Downloads/transit_survey.xlsx")
-info <- read_xlsx("2021 Agency Information.xlsx")
-revenue <- read_xlsx("2021 Funding Sources_static.xlsx", sheet=3)
-info <- subset(info, info$State=="CA")
-info$`NTD ID` <- gsub("0RO2-", "", info$`NTD ID`)
-info$`NTD ID` <- gsub("9R02-", "", info$`NTD ID`)
-info$`NTD ID` <- gsub("6R02-", "", info$`NTD ID`)
-transit_survey$NTDID <- gsub("9R02-", "", transit_survey$NTDID)
-transit_survey$NTDID <- gsub("6R02-", "", transit_survey$NTDID)
-setdiff(transit_survey$NTDID, info$`NTD ID`)
-info <- subset(info, info$`NTD ID` %in% transit_survey$NTDID)
-info$NTDID=info$`NTD ID`
-info$VOMS=info$`Total VOMS`
-info$pop= info$`Service Area Pop`
-info$mile = info$`Service Area Sq Miles`
-info <- info %>% select(NTDID, pop, mile, VOMS)
-revenue$NTDID = revenue$`NTD ID`
-revenue$revenue =revenue$Total
-revenue <- revenue %>% select(revenue, NTDID)
-info$NTD_21 <- rep(1, length(info$NTDID))
-transit_survey <- merge(transit_survey, revenue, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
-transit_survey <- merge(transit_survey, info, by.x="NTDID", by.y="NTDID", all.x=TRUE, all.y=FALSE)
-
-#update agency characteristics based on new NTDIDs (in whichever year we go with)
-write.csv(transit_survey, "transit_survey.csv")
-
+#firmographs-----
 #read in documents
-ntd <- read_excel("~/Downloads/Qlik Sense - Summary Transit Organizations - February 6, 2024.xlsx")
+ntd <- read_excel("Qlik Sense - Summary Transit Organizations - February 6, 2024.xlsx")
 
 #double check what is NOT matching with NTDIDs
 intersect(samp_frame$NTDID, ntd$`ID NTD`)
@@ -325,7 +334,7 @@ print(matched_unmatched)
 
 ##pair w/ mins------
 
-mins <- read_excel("~/Desktop/Qlik Sense - Year Minutes Summary - February 26, 2024.xlsx")
+mins <- read_excel("Qlik Sense - Year Minutes Summary - February 26, 2024.xlsx")
 mins <- subset(mins, mins$`2023` > 5)
 mins <- mins %>% select(`Name Parent`, `2023`)
 
@@ -340,10 +349,10 @@ sf <- merge(samp_frame, ntd3, by.x="AgencyName", by.y="AgencyName", all.x=TRUE, 
 sf$minutes <- ifelse(sf$minutes_sum > 0, 1, 0) #assign binary indicator for minute publication
 sf$minutes <- ifelse(is.na(sf$minutes), 0 , sf$minutes)
 
-write.csv(sf, "~/Desktop/firmographs.csv")
-##analysis----
+write.csv(sf, "firmographs.csv")
 
-#descriptive stats
+
+#descriptive statistics----
 
 #composition of minutes total
 type1 = subset(sf, sf$minutes==1) %>% group_by(OrgType) %>% summarize(pc = length(unique(AgencyName))/length(sf$AgencyName[sf$minutes==1]))
@@ -355,75 +364,3 @@ size = subset(sf, sf$minutes==1)  %>% summarize(VOMS = mean(na.omit(VOMS)), pop 
 size = sf  %>% summarize(VOMS = mean(na.omit(VOMS)), pop = mean(na.omit(pop)), rev=mean(na.omit(revenue)))
 #size of survey respondents
 size = subset(sf, sf$survey_response==1)  %>% summarize(VOMS = mean(na.omit(VOMS)), pop = mean(na.omit(pop)), rev=mean(na.omit(revenue)))
-
-#regression
-sf$OrgType <- ifelse(sf$OrgType == "Independent Public Agency" , "Ind. Public Agency", sf$OrgType)
-sf$OrgType <- relevel(as.factor(sf$OrgType), ref="Local Government")
-sf$VOMS <- ifelse(sf$VOMS==0, NA,sf$VOMS)
-m4 <-lm(minutes~log(VOMS+1), data = sf)
-
-m1 <-lm(minutes~log(pop), data = sf)
-
-m2 <-lm(minutes~log(revenue), data = sf)
-
-m3<-lm(minutes~log(mile), data = sf)
-
-
-models <- list(
-  "Model 1"     = m1,
-  "Model 2"     = m2,
-  "Model 3" = m3,
-  "Model 4"     = m4
-)
-
-
-model_summary <- modelsummary(models,stars = TRUE, coef_rename = TRUE,vcov="HC2", estimate = c("estimate"),
-            fmt = fmt_sprintf("%.3f"),
-             output=  "~/Desktop/minutes.html")
-
-model_summary <- modelsummary(models,stars = TRUE, coef_rename = TRUE,vcov="HC2",  statistic = c("p.value"),
-                              fmt = fmt_sprintf("%.3f"),
-                              output=  "~/Desktop/minutes.html")
-
-
-#plot
-show_sjplot_pals()
-
-plot_models(m1, m2, m3, show.p = TRUE, show.values=TRUE, p.threshold = c(0.05, 0.01, 0.001) , title="Minutes Publication (Log)",
-            vline.color = "red",
-            legend.title = "Model")+ scale_color_sjplot(palette = "eight")
-plot_models(m4, m5, m6, show.p = TRUE, show.values=TRUE, p.threshold = c(0.05, 0.01, 0.001) , title="Minutes Publication",
-            vline.color = "red",
-            legend.title = "Model")+ scale_color_sjplot(palette = "eight")
-                                                   
-
-####transit signal priority analysis----
-tsp <- read_xlsx("transit_survey_tsp.xlsx")
-tsp = data.frame(tsp)
-tsp$survey_response = ifelse(tsp$survey_response !=1, 0, tsp$survey_response)
-tsp$survey_response <- as.numeric(tsp$survey_response)
-t_resp <- tsp[tsp$survey_response == 1, ]
-t_resp$tsp <- ifelse(is.na(t_resp$tsp), 0, t_resp$tsp)
-
-
-m1 <-lm(tsp~log(pop), data = t_resp)
-
-m2 <-lm(tsp~log(mile), data = t_resp)
-
-m3<-lm(tsp~log(VOMS), data = t_resp)
-
-
-models <- list(
-  "Model 1"     = m1,
-  "Model 2"     = m2,
-  "Model 3" = m3
-)
-
-
-model_summary <- modelsummary(models,stars = TRUE, coef_rename = TRUE,vcov="HC2", estimate = c("estimate"),
-                              fmt = fmt_sprintf("%.3f"),
-                              output=  "~/Desktop/tsp.html")
-
-
-
-
